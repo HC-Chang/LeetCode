@@ -8,10 +8,10 @@
 - 136: Single Number - Easy
 - 7:  Reverse Integer - Medium
 - 2: Add Two Numbers - Medium
+- 61: Rotate List - Medium
 
 ---
 ## Todo:
 
-- 61: Rotate List - Medium
 - 518: Coin Change 2 - Medium
 
