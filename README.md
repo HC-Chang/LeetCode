@@ -9,6 +9,7 @@
 - 7:  Reverse Integer - Medium
 - 2: Add Two Numbers - Medium
 - 61: Rotate List - Medium
+- 905: Sort Array By Parity - Easy
 
 ---
 ## Todo:
