@@ -10,6 +10,7 @@
 - 2: Add Two Numbers - Medium
 - 61: Rotate List - Medium
 - 905: Sort Array By Parity - Easy
+- 202: Happy Number - Easy
 
 ---
 ## Todo:
