@@ -11,9 +11,9 @@
 - 61: Rotate List - Medium
 - 905: Sort Array By Parity - Easy
 - 202: Happy Number - Easy
+- 53: Maximum Subarray - Easy
 
 ---
 ## Todo:
 
 - 518: Coin Change 2 - Medium
-
