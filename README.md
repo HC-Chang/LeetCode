@@ -12,6 +12,7 @@
 - 905: Sort Array By Parity - Easy
 - 202: Happy Number - Easy
 - 53: Maximum Subarray - Easy
+- 283: Move Zeroes - Easy
 
 ---
 ## Todo:
