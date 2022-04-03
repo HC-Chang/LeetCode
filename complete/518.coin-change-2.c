@@ -77,7 +77,7 @@ int change(int amount, int *coins, int coinsSize)
 
     for (int i = 0; i < coinsSize; i++)
     {
-        for (int j = coins[0]; j <= amount; j++)
+        for (int j = coins[i]; j <= amount; j++)
         {
             if (j - coins[i] >= 0)
             {
