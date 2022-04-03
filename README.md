@@ -14,8 +14,7 @@
 - 53: Maximum Subarray - Easy
 - 283: Move Zeroes - Easy
 - 8: String to Integer (atoi) - Medium
+- 518: Coin Change 2 - Medium
 
 ---
 ## Todo:
-
-- 518: Coin Change 2 - Medium
