@@ -9,6 +9,7 @@
 - 202: Happy Number - Easy
 - 53: Maximum Subarray - Easy
 - 283: Move Zeroes - Easy
+- 876: Middle of the Linked List - Easy
 
 ---
 
