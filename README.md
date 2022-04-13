@@ -10,6 +10,7 @@
 - 53: Maximum Subarray - Easy
 - 283: Move Zeroes - Easy
 - 876: Middle of the Linked List - Easy
+- 844: Backspace String Compare - Easy
 
 ---
 
