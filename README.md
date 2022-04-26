@@ -14,6 +14,7 @@
 - 155: Min Stack - Easy
 - 104: Maximum Depth of Binary Tree - Easy
 - 543: Diameter of Binary Tree - Easy
+- 1046: Last Stone Weight - Easy
 
 ---
 
