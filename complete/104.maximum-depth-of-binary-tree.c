@@ -18,6 +18,7 @@
 // 樹的高度 = max(左子樹,右子樹) + 1
 int maxDepth(struct TreeNode *root)
 {
+    // 邊界
     if (root == NULL)
     {
         return 0;

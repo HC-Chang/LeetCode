@@ -13,6 +13,7 @@
 - 844: Backspace String Compare - Easy
 - 155: Min Stack - Easy
 - 104: Maximum Depth of Binary Tree - Easy
+- 543: Diameter of Binary Tree - Easy
 
 ---
 
@@ -31,4 +32,3 @@
 ## Todo:
 
 - 49: Group Anagrams - Medium
-- 543: Diameter of Binary Tree - Easy
