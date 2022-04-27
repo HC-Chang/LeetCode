@@ -30,6 +30,15 @@
 - 135: Candy - Hard
 
 ---
+## Note:
+
+- stack: 155.
+- heap: 1046
+- recursive: 104.543
+- fast.slow pointer: 202.876
+- dynamic programming: 518.844.905
+
+---
 ## Todo:
 
 - 49: Group Anagrams - Medium
