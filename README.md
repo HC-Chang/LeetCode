@@ -24,6 +24,7 @@
 - 8: String to Integer (atoi) - Medium
 - 518: Coin Change 2 - Medium
 - 122: Best Time to Buy and Sell Stock II - Medium
+- 707: Design Linked List - Medium
 
 ---
 
