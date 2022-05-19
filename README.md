@@ -15,6 +15,7 @@
 - 104: Maximum Depth of Binary Tree - Easy
 - 543: Diameter of Binary Tree - Easy
 - 1046: Last Stone Weight - Easy
+- 141: Linked List Cycle - Easy
 
 ---
 
@@ -34,11 +35,30 @@
 ---
 ## Note:
 
-- stack: 155.
-- heap: 1046
-- recursive: 104.543
-- fast.slow pointer: 202.876
-- dynamic programming: 518.844.905
+- Array: 1.53.122.135.136.283.455.518.525.905.1046
+- Hash Table: 1.141.202.525
+- Recursion: 2.104.543
+- Linked List: 2.61.141.707.876
+- Math: 2.7.202
+- String: 8.844
+- Divide and Conquer: 53
+- Dynamic Programming: 53.122.518.844.905
+- Two Pointers: 61.141.202.283.844.876.905
+
+- Tree: 104.543
+- Depth-First Search: 104.543
+- Breadth-First Serach: 104
+- Binary Tree: 104.543
+
+- Sorting: 455.905
+- Greedy: 122.135.455
+- Bit Manipulation: 136
+- Stack: 155.844
+- Heap: 1046
+- Prefix Sum: 525
+- Simulation: 844
+- Design: 155.707
+
 
 ---
 ## Todo:
