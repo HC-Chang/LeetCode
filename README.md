@@ -25,6 +25,7 @@
 - 518: Coin Change 2 - Medium
 - 122: Best Time to Buy and Sell Stock II - Medium
 - 707: Design Linked List - Medium
+- 525: Contiguous Array - Medium
 
 ---
 
