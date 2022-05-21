@@ -28,6 +28,7 @@
 - 707: Design Linked List - Medium
 - 525: Contiguous Array - Medium
 - 142: Linked List Cycle II - Medium
+- 238: Product of Array Except Self - Medium
 
 ---
 
@@ -36,7 +37,7 @@
 ---
 ## Note:
 
-- Array: 1.53.122.135.136.283.455.518.525.905.1046
+- Array: 1.53.122.135.136.283.455.518.525.905.1046.238
 - Hash Table: 1.141.202.525
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142
