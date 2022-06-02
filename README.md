@@ -30,6 +30,7 @@
 - 142: Linked List Cycle II - Medium
 - 238: Product of Array Except Self - Medium
 - 678: Valid Parenthesis String - Medium
+- 200: Number of Islands - Medium
 
 ---
 
@@ -48,8 +49,8 @@
 - Dynamic Programming: 53.122.518.844.905
 - Two Pointers: 61.141.202.283.844.876.905.142
 - Tree: 104.543
-- Depth-First Search: 104.543
-- Breadth-First Serach: 104
+- Depth-First Search: 104.543.200
+- Breadth-First Serach: 104.200
 - Binary Tree: 104.543
 - Sorting: 455.905.49
 - Greedy: 122.135.455
@@ -59,6 +60,7 @@
 - Prefix Sum: 525
 - Simulation: 844
 - Design: 155.707
+- Union Find: 200
 
 
 ---
