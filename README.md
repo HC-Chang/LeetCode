@@ -31,6 +31,7 @@
 - 238: Product of Array Except Self - Medium
 - 678: Valid Parenthesis String - Medium
 - 200: Number of Islands - Medium
+- 64: Minimum Path Sum - Medium
 
 ---
 
@@ -39,14 +40,14 @@
 ---
 ## Note:
 
-- Array: 1.53.122.135.136.283.455.518.525.905.1046.238
+- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64
 - Hash Table: 1.141.202.525.49
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142
 - Math: 2.7.202
 - String: 8.844.49.678
 - Divide and Conquer: 53
-- Dynamic Programming: 53.122.518.844.905
+- Dynamic Programming: 53.122.518.844.905.64
 - Two Pointers: 61.141.202.283.844.876.905.142
 - Tree: 104.543
 - Depth-First Search: 104.543.200
