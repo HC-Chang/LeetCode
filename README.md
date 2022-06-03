@@ -33,6 +33,7 @@
 - 200: Number of Islands - Medium
 - 64: Minimum Path Sum - Medium
 - 33: Search in Rotated Sorted Array - Medium
+- 1008: Construct Binary Search Tree from Preorder Traversal - Medium
 
 ---
 
@@ -48,10 +49,10 @@
 - Math: 2.7.202
 - String: 8.844.49.678
 - Divide and Conquer: 53
-- Dynamic Programming: 53.122.518.844.905.64
+- Dynamic Programming: 53.122.518.844.905.64.1008
 - Two Pointers: 61.141.202.283.844.876.905.142
-- Tree: 104.543
-- Depth-First Search: 104.543.200
+- Tree: 104.543.1008
+- Depth-First Search: 104.543.200.1008
 - Breadth-First Serach: 104.200
 - Binary Tree: 104.543
 - Sorting: 455.905.49
