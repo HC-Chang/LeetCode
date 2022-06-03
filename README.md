@@ -32,6 +32,7 @@
 - 678: Valid Parenthesis String - Medium
 - 200: Number of Islands - Medium
 - 64: Minimum Path Sum - Medium
+- 33: Search in Rotated Sorted Array - Medium
 
 ---
 
@@ -40,7 +41,7 @@
 ---
 ## Note:
 
-- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64
+- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33
 - Hash Table: 1.141.202.525.49
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142
@@ -62,7 +63,7 @@
 - Simulation: 844
 - Design: 155.707
 - Union Find: 200
-
+- Binary Search: 33
 
 ---
 ## Todo:
