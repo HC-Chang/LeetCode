@@ -34,6 +34,7 @@
 - 64: Minimum Path Sum - Medium
 - 33: Search in Rotated Sorted Array - Medium
 - 1008: Construct Binary Search Tree from Preorder Traversal - Medium
+- 560: Subarray Sum Equals K - Medium
 
 ---
 
@@ -42,8 +43,8 @@
 ---
 ## Note:
 
-- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33
-- Hash Table: 1.141.202.525.49
+- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560
+- Hash Table: 1.141.202.525.49.560
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142
 - Math: 2.7.202
