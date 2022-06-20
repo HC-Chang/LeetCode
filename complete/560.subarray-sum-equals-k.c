@@ -11,21 +11,20 @@
 // -10^7 <= k <= 10^7
 
 // @lc code=start
-
+#define CAPACITY 10000000
 int subarraySum(int *nums, int numsSize, int k)
 {
     // Hash Table -> Avoid Time Limit Exceeded
     // -10^7 <= k <= 10^7
-    int *hash_table = calloc(20000001, sizeof(int));
+    int *hash_table = calloc(CAPACITY * 2 + 1, sizeof(int));
     int sum = 0;
     int count = 0;
-    // hash_table[10000000] = 1;
-    hash_table[10000000] = 1;
+    hash_table[CAPACITY] = 1;
     for (int i = 0; i < numsSize; i++)
     {
         sum += nums[i];
-        count += hash_table[sum - k + 10000000];
-        hash_table[sum + 10000000]++;
+        count += hash_table[sum - k + CAPACITY];
+        ++hash_table[sum + CAPACITY];
     }
     return count;
 }
