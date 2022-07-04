@@ -13,6 +13,7 @@ int wiggleMaxLength(int *nums, int numsSize)
         return 1;
     }
 
+    int state = 0;
     int count = 1;
     int *dp = calloc(numsSize, sizeof(int));
     dp[0] = 0;
@@ -27,25 +28,22 @@ int wiggleMaxLength(int *nums, int numsSize)
             dp[i] = -1;
         }
 
-        printf("%i\n", dp[i]);
-    }
-
-    int state = 1;
-    int start = 0;
-    for (int i = 1; i < numsSize; i++)
-    {
-        if (start == 0 && (dp[i] == state || dp[i] == -state))
+        if (state == 0 && dp[i] != 0)
         {
-            start = 1;
             state = dp[i];
         }
-        if (start && dp[i] == state)
+
+        if (state != 0 && dp[i] == state)
         {
             state = -state;
             count++;
         }
+
+        // printf("%i\n", dp[i]);
     }
 
+    free(dp);
+    
     return count;
 }
 // @lc code=end
