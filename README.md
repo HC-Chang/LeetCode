@@ -37,6 +37,7 @@
 - 1008: Construct Binary Search Tree from Preorder Traversal - Medium
 - 560: Subarray Sum Equals K - Medium
 - 376: Wiggle Subsequence - Medium
+- 201: Bitwise AND of Numbers Range - Medium
 
 ---
 
@@ -74,5 +75,4 @@
 ## Todo:
 
 - 49: Group Anagrams - Medium
-- 201: Bitwise AND of Numbers Range - Medium
 - 128: Longest Consecutive Sequence - Medium
