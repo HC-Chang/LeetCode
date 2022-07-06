@@ -16,6 +16,7 @@
 - 543: Diameter of Binary Tree - Easy
 - 1046: Last Stone Weight - Easy
 - 141: Linked List Cycle - Easy
+- 509: Fibonacci Number - Easy
 
 ---
 
@@ -44,7 +45,7 @@
 ---
 ## Note:
 
-- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560
+- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128
 - Hash Table: 1.141.202.525.49.560
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142
@@ -53,7 +54,7 @@
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376
 - Two Pointers: 61.141.202.283.844.876.905.142
-- Tree: 104.543.1008
+- Tree: 104.543.1008.509
 - Depth-First Search: 104.543.200.1008
 - Breadth-First Serach: 104.200
 - Binary Tree: 104.543
@@ -65,10 +66,13 @@
 - Prefix Sum: 525
 - Simulation: 844
 - Design: 155.707
-- Union Find: 200
+- Union Find: 200.128
 - Binary Search: 33
+- Bit-Manipulation: 201
 
 ---
 ## Todo:
 
 - 49: Group Anagrams - Medium
+- 201: Bitwise AND of Numbers Range - Medium
+- 128: Longest Consecutive Sequence - Medium
