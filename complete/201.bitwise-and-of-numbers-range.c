@@ -8,20 +8,34 @@
 
 int rangeBitwiseAnd(int left, int right)
 {
-    unsigned int val = 0;
-    for (int i = 30; i >= 0; i--)
+    // Solution 1:
+    // unsigned int val = 0;
+    // for (int i = 30; i >= 0; i--)
+    // {
+    //     if ((left & (1 << i)) == (right & (1 << i)))
+    //     {
+    //         val += (left & (1 << i));
+    //     }
+    //     else
+    //     {
+    //         break;
+    //     }
+    // }
+
+    // return (unsigned int)val;
+
+
+
+    // Solution 2:
+    int count = 0;
+    while (left != right)
     {
-        if ((left & (1 << i)) == (right & (1 << i)))
-        {
-            val += (left & (1 << i));
-        }
-        else
-        {
-            break;
-        }
+        left = left >> 1;
+        right = right >> 1;
+        count++;
     }
 
-    return (unsigned int)val;
+    return left << count;
 }
 // @lc code=end
 
