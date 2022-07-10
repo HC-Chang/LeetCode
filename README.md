@@ -17,6 +17,7 @@
 - 1046: Last Stone Weight - Easy
 - 141: Linked List Cycle - Easy
 - 509: Fibonacci Number - Easy
+- 746: Min Cost Climbing Stairs - Easy
 
 ---
 
@@ -46,14 +47,14 @@
 ---
 ## Note:
 
-- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128
+- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746
 - Hash Table: 1.141.202.525.49.560
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142
 - Math: 2.7.202
 - String: 8.844.49.678
 - Divide and Conquer: 53
-- Dynamic Programming: 53.122.518.844.905.64.1008.376
+- Dynamic Programming: 53.122.518.844.905.64.1008.376.746
 - Two Pointers: 61.141.202.283.844.876.905.142
 - Tree: 104.543.1008.509
 - Depth-First Search: 104.543.200.1008
@@ -66,13 +67,14 @@
 - Heap: 1046
 - Prefix Sum: 525
 - Simulation: 844
-- Design: 155.707
+- Design: 155.707.146
 - Union Find: 200.128
 - Binary Search: 33
 - Bit-Manipulation: 201
-
+- Trie: 746
 ---
 ## Todo:
 
 - 49: Group Anagrams - Medium
 - 128: Longest Consecutive Sequence - Medium
+- 146: LRU Cache - Medium
