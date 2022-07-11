@@ -39,6 +39,7 @@
 - 560: Subarray Sum Equals K - Medium
 - 376: Wiggle Subsequence - Medium
 - 201: Bitwise AND of Numbers Range - Medium
+- 199: Binary Tree Right Side View - Medium
 
 ---
 
@@ -47,21 +48,21 @@
 ---
 ## Note:
 
-- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746
-- Hash Table: 1.141.202.525.49.560
+- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55
+- Hash Table: 1.141.202.525.49.560.146
 - Recursion: 2.104.543
-- Linked List: 2.61.141.707.876.142
+- Linked List: 2.61.141.707.876.142.146
 - Math: 2.7.202
 - String: 8.844.49.678
 - Divide and Conquer: 53
-- Dynamic Programming: 53.122.518.844.905.64.1008.376.746
+- Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55
 - Two Pointers: 61.141.202.283.844.876.905.142
-- Tree: 104.543.1008.509
-- Depth-First Search: 104.543.200.1008
-- Breadth-First Serach: 104.200
-- Binary Tree: 104.543
+- Tree: 104.543.1008.509.199
+- Depth-First Search: 104.543.200.1008.199
+- Breadth-First Serach: 104.200.199
+- Binary Tree: 104.543.199
 - Sorting: 455.905.49
-- Greedy: 122.135.455.376
+- Greedy: 122.135.455.376.55
 - Bit Manipulation: 136
 - Stack: 155.844
 - Heap: 1046
@@ -78,3 +79,4 @@
 - 49: Group Anagrams - Medium
 - 128: Longest Consecutive Sequence - Medium
 - 146: LRU Cache - Medium
+- 55: Jump Game - Medium
