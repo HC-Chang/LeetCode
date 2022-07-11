@@ -23,7 +23,8 @@ void recursive(struct TreeNode *root, int *r, int *r_size, int new)
     {
         return;
     }
-    r[new ++] = root->val;
+    r[new] = root->val;
+    new ++;
     *r_size = new > *r_size ? new : *r_size;
 
     recursive(root->left, r, r_size, new);
