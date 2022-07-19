@@ -18,6 +18,7 @@
 - 141: Linked List Cycle - Easy
 - 509: Fibonacci Number - Easy
 - 746: Min Cost Climbing Stairs - Easy
+- 118: Pascal’s Triangle - Easy
 
 ---
 
@@ -48,14 +49,14 @@
 ---
 ## Note:
 
-- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55
+- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118
 - Hash Table: 1.141.202.525.49.560.146
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142.146
 - Math: 2.7.202
 - String: 8.844.49.678
 - Divide and Conquer: 53
-- Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55
+- Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118
 - Two Pointers: 61.141.202.283.844.876.905.142
 - Tree: 104.543.1008.509.199
 - Depth-First Search: 104.543.200.1008.199
