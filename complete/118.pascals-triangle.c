@@ -27,17 +27,19 @@ int **generate(int numRows, int *returnSize, int **returnColumnSizes)
             {
                 r[i][j] = 1;
             }
-            continue;
         }
-        for (int j = 0; j < i+1; j++)
+        else
         {
-            if (j == 0 || j == i)
+            for (int j = 0; j < i + 1; j++)
             {
-                r[i][j] = 1;
-            }
-            else
-            {
-                r[i][j] = r[i - 1][j - 1] + r[i - 1][j];
+                if (j == 0 || j == i)
+                {
+                    r[i][j] = 1;
+                }
+                else
+                {
+                    r[i][j] = r[i - 1][j - 1] + r[i - 1][j];
+                }
             }
         }
     }
