@@ -41,6 +41,7 @@
 - 376: Wiggle Subsequence - Medium
 - 201: Bitwise AND of Numbers Range - Medium
 - 199: Binary Tree Right Side View - Medium
+- 55: Jump Game - Medium
 
 ---
 
@@ -80,4 +81,3 @@
 - 49: Group Anagrams - Medium
 - 128: Longest Consecutive Sequence - Medium
 - 146: LRU Cache - Medium
-- 55: Jump Game - Medium
