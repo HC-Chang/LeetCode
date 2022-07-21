@@ -43,6 +43,7 @@
 - 201: Bitwise AND of Numbers Range - Medium
 - 199: Binary Tree Right Side View - Medium
 - 55: Jump Game - Medium
+- 877: Stone Game - Medium
 
 ---
 
@@ -51,18 +52,18 @@
 ---
 ## Note:
 
-- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118
+- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118.877
 - Hash Table: 1.141.202.525.49.560.146
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142.146
-- Math: 2.7.202.292
+- Math: 2.7.202.292.877
 - String: 8.844.49.678
 - Divide and Conquer: 53
-- Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118
+- Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877
 - Two Pointers: 61.141.202.283.844.876.905.142
 - Tree: 104.543.1008.509.199
 - Depth-First Search: 104.543.200.1008.199
-- Breadth-First Serach: 104.200.199
+- Breadth-First Serach: 104.200.199.877
 - Binary Tree: 104.543.199
 - Sorting: 455.905.49
 - Greedy: 122.135.455.376.55
@@ -77,7 +78,7 @@
 - Bit-Manipulation: 201
 - Trie: 746
 - Brainteaser: 292
-- Game Theory: 292
+- Game Theory: 292.877
 - Minimax: 292
 ---
 ## Todo:
