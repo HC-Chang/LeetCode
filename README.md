@@ -44,6 +44,7 @@
 - 199: Binary Tree Right Side View - Medium
 - 55: Jump Game - Medium
 - 877: Stone Game - Medium
+- 319: Bulb Switcher - Medium
 
 ---
 
@@ -56,7 +57,7 @@
 - Hash Table: 1.141.202.525.49.560.146
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142.146
-- Math: 2.7.202.292.877
+- Math: 2.7.202.292.877.319
 - String: 8.844.49.678
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877
@@ -77,7 +78,7 @@
 - Binary Search: 33
 - Bit-Manipulation: 201
 - Trie: 746
-- Brainteaser: 292
+- Brainteaser: 292.319
 - Game Theory: 292.877
 - Minimax: 292
 ---
