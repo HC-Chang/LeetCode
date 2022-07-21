@@ -19,6 +19,7 @@
 - 509: Fibonacci Number - Easy
 - 746: Min Cost Climbing Stairs - Easy
 - 118: Pascal’s Triangle - Easy
+- 292: Nim Game - Easy
 
 ---
 
@@ -54,7 +55,7 @@
 - Hash Table: 1.141.202.525.49.560.146
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142.146
-- Math: 2.7.202
+- Math: 2.7.202.292
 - String: 8.844.49.678
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118
@@ -75,6 +76,9 @@
 - Binary Search: 33
 - Bit-Manipulation: 201
 - Trie: 746
+- Brainteaser: 292
+- Game Theory: 292
+- Minimax: 292
 ---
 ## Todo:
 
