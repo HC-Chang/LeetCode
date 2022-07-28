@@ -20,6 +20,7 @@
 - 746: Min Cost Climbing Stairs - Easy
 - 118: Pascal’s Triangle - Easy
 - 292: Nim Game - Easy
+- 242: Valid Anagram - Easy
 
 ---
 
@@ -54,19 +55,19 @@
 ## Note:
 
 - Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118.877
-- Hash Table: 1.141.202.525.49.560.146
+- Hash Table: 1.141.202.525.49.560.146.76.242
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142.146
 - Math: 2.7.202.292.877.319
-- String: 8.844.49.678
+- String: 8.844.49.678.76.242
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877
-- Two Pointers: 61.141.202.283.844.876.905.142
+- Two Pointers: 61.141.202.283.844.876.905.142.76
 - Tree: 104.543.1008.509.199
 - Depth-First Search: 104.543.200.1008.199
 - Breadth-First Serach: 104.200.199.877
 - Binary Tree: 104.543.199
-- Sorting: 455.905.49
+- Sorting: 455.905.49.242
 - Greedy: 122.135.455.376.55
 - Bit Manipulation: 136
 - Stack: 155.844
@@ -81,9 +82,11 @@
 - Brainteaser: 292.319
 - Game Theory: 292.877
 - Minimax: 292
+- Sliding Window: 76
 ---
 ## Todo:
 
 - 49: Group Anagrams - Medium
 - 128: Longest Consecutive Sequence - Medium
 - 146: LRU Cache - Medium
+- 76: Minimum Window Substring - Hard
