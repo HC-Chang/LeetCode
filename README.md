@@ -46,6 +46,7 @@
 - 55: Jump Game - Medium
 - 877: Stone Game - Medium
 - 319: Bulb Switcher - Medium
+- 300: Longest Increasing Subsequence - Medium
 
 ---
 
@@ -61,11 +62,11 @@
 - Math: 2.7.202.292.877.319
 - String: 8.844.49.678.76.242
 - Divide and Conquer: 53
-- Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877
+- Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877.300
 - Two Pointers: 61.141.202.283.844.876.905.142.76
 - Tree: 104.543.1008.509.199
 - Depth-First Search: 104.543.200.1008.199
-- Breadth-First Serach: 104.200.199.877
+- Breadth-First Search: 104.200.199.877
 - Binary Tree: 104.543.199
 - Sorting: 455.905.49.242
 - Greedy: 122.135.455.376.55
@@ -76,7 +77,7 @@
 - Simulation: 844
 - Design: 155.707.146
 - Union Find: 200.128
-- Binary Search: 33
+- Binary Search: 33.300
 - Bit-Manipulation: 201
 - Trie: 746
 - Brainteaser: 292.319
