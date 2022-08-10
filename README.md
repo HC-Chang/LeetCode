@@ -51,6 +51,7 @@
 ---
 
 - 135: Candy - Hard
+- 76: Minimum Window Substring - Hard
 
 ---
 ## Note:
@@ -90,4 +91,3 @@
 - 49: Group Anagrams - Medium
 - 128: Longest Consecutive Sequence - Medium
 - 146: LRU Cache - Medium
-- 76: Minimum Window Substring - Hard
