@@ -47,6 +47,7 @@
 - 877: Stone Game - Medium
 - 319: Bulb Switcher - Medium
 - 300: Longest Increasing Subsequence - Medium
+- 98: Validate Binary Search Tree - Medium
 
 ---
 
@@ -65,8 +66,8 @@
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877.300
 - Two Pointers: 61.141.202.283.844.876.905.142.76
-- Tree: 104.543.1008.509.199
-- Depth-First Search: 104.543.200.1008.199
+- Tree: 104.543.1008.509.199.98
+- Depth-First Search: 104.543.200.1008.199.98
 - Breadth-First Search: 104.200.199.877
 - Binary Tree: 104.543.199
 - Sorting: 455.905.49.242
