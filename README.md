@@ -21,6 +21,7 @@
 - 118: Pascal’s Triangle - Easy
 - 292: Nim Game - Easy
 - 242: Valid Anagram - Easy
+- 94: Binary Tree Inorder Traversal - Easy
 
 ---
 
@@ -58,7 +59,7 @@
 ## Note:
 
 - Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118.877
-- Hash Table: 1.141.202.525.49.560.146.76.242
+- Hash Table: 1.141.202.525.49.560.146.76.242.94
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142.146
 - Math: 2.7.202.292.877.319
@@ -66,14 +67,14 @@
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877.300
 - Two Pointers: 61.141.202.283.844.876.905.142.76
-- Tree: 104.543.1008.509.199.98
+- Tree: 104.543.1008.509.199.98.94
 - Depth-First Search: 104.543.200.1008.199.98
 - Breadth-First Search: 104.200.199.877
 - Binary Tree: 104.543.199
 - Sorting: 455.905.49.242
 - Greedy: 122.135.455.376.55
 - Bit Manipulation: 136
-- Stack: 155.844
+- Stack: 155.844.94
 - Heap: 1046
 - Prefix Sum: 525
 - Simulation: 844
