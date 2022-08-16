@@ -24,6 +24,7 @@
 - 94: Binary Tree Inorder Traversal - Easy
 - 235: Lowest Common Ancestor of a Binary Search Tree - Easy
 - 13: Roman to Integer - Easy
+- 387: First Unique Character in a String - Easy
 
 ---
 
@@ -61,11 +62,11 @@
 ## Note:
 
 - Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118.877
-- Hash Table: 1.141.202.525.49.560.146.76.242.94
+- Hash Table: 1.141.202.525.49.560.146.76.242.94.387
 - Recursion: 2.104.543
 - Linked List: 2.61.141.707.876.142.146
 - Math: 2.7.202.292.877.319.13
-- String: 8.844.49.678.76.242.13
+- String: 8.844.49.678.76.242.13.387
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877.300
 - Two Pointers: 61.141.202.283.844.876.905.142.76
