@@ -27,6 +27,7 @@
 - 387: First Unique Character in a String - Easy
 - 804: Unique Morse Code Words - Easy
 - 342: Power of Four - Easy
+- 234: Palindrome Linked List - Easy
 
 ---
 
@@ -65,13 +66,13 @@
 
 - Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118.877.804
 - Hash Table: 1.141.202.525.49.560.146.76.242.94.387.804
-- Recursion: 2.104.543.342
-- Linked List: 2.61.141.707.876.142.146
+- Recursion: 2.104.543.342.234
+- Linked List: 2.61.141.707.876.142.146.234
 - Math: 2.7.202.292.877.319.13.342
 - String: 8.844.49.678.76.242.13.387.804
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877.300
-- Two Pointers: 61.141.202.283.844.876.905.142.76
+- Two Pointers: 61.141.202.283.844.876.905.142.76.234
 - Tree: 104.543.1008.509.199.98.94.235.102
 - Depth-First Search: 104.543.200.1008.199.98
 - Breadth-First Search: 104.200.199.877.102
@@ -79,7 +80,7 @@
 - Sorting: 455.905.49.242
 - Greedy: 122.135.455.376.55
 - Bit Manipulation: 136
-- Stack: 155.844.94
+- Stack: 155.844.94.234
 - Heap: 1046
 - Prefix Sum: 525
 - Simulation: 844
