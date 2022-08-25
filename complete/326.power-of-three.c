@@ -8,17 +8,12 @@
 
 bool isPowerOfThree(int n)
 {
-    if (n <= 2 || n % 2 == 0)
+    if (n < 0 || n % 2 == 0 || n % 10 == 5)
     {
-        if (n == 1)
-        {
-            return true;
-        }
-
         return false;
     }
 
-    unsigned int i = 3;
+    unsigned int i = 1;
 
     while (i <= n)
     {
@@ -35,3 +30,4 @@ bool isPowerOfThree(int n)
 }
 // @lc code=end
 // 3 的次方一定為奇數
+// n % 10 為 3.9.7.1 其中一個數
