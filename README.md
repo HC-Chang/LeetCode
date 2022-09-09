@@ -57,6 +57,7 @@
 - 319: Bulb Switcher - Medium
 - 300: Longest Increasing Subsequence - Medium
 - 98: Validate Binary Search Tree - Medium
+- 49: Group Anagrams - Medium
 
 ---
 
@@ -98,7 +99,6 @@
 ---
 ## Todo:
 
-- 49: Group Anagrams - Medium
 - 128: Longest Consecutive Sequence - Medium
 - 146: LRU Cache - Medium
 - 102: Binary Tree Level Order Traversal - Medium
