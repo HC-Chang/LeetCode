@@ -59,6 +59,7 @@
 - 300: Longest Increasing Subsequence - Medium
 - 98: Validate Binary Search Tree - Medium
 - 49: Group Anagrams - Medium
+- 393: UTF-8 Validation - Medium
 
 ---
 
@@ -68,7 +69,7 @@
 ---
 ## Note:
 
-- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118.877.804
+- Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118.877.804.393
 - Recursion: 2.104.543.342.234.326
 - Hash Table: 1.141.202.525.49.560.146.76.242.94.387.804.383.160
 - Linked List: 2.61.141.707.876.142.146.234.160
@@ -83,7 +84,7 @@
 - Binary Tree: 104.543.199.235.102
 - Sorting: 455.905.49.242
 - Greedy: 122.135.455.376.55
-- Bit Manipulation: 136
+- Bit Manipulation: 136.393
 - Stack: 155.844.94.234
 - Heap: 1046
 - Prefix Sum: 525
