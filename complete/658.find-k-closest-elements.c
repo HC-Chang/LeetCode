@@ -14,6 +14,7 @@ int *findClosestElements(int *arr, int arrSize, int k, int x, int *returnSize)
 {
     // Solution 1: DP
     *returnSize = k;
+    int small_index = 0;
 
     int *dp = calloc(arrSize, sizeof(int));
     for (int i = 0; i < arrSize; i++)
@@ -21,7 +22,6 @@ int *findClosestElements(int *arr, int arrSize, int k, int x, int *returnSize)
         dp[i] = (arr[i] - x >= 0) ? (arr[i] - x) : -(arr[i] - x);
     }
 
-    int small_index = 0;
     for (int i = 0; i < arrSize - k + 1; i++)
     {
         for (int j = i + 1; j < i + k; j++)
