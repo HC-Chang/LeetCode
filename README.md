@@ -31,6 +31,7 @@
 - 326: Power of Three - Easy
 - 383: Ransom Note - Easy
 - 160: Intersection of Two Linked Lists - Easy
+- 112: Path Sum - Easy
 
 ---
 
@@ -81,10 +82,10 @@
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877.300.96
 - Two Pointers: 61.141.202.283.844.876.905.142.76.234.160.19.658
-- Tree: 104.543.1008.509.199.98.94.235.102.96
-- Depth-First Search: 104.543.200.1008.199.98
-- Breadth-First Search: 104.200.199.877.102
-- Binary Tree: 104.543.199.235.102.96
+- Tree: 104.543.1008.509.199.98.94.235.102.96.112
+- Depth-First Search: 104.543.200.1008.199.98.112
+- Breadth-First Search: 104.200.199.877.102.112
+- Binary Tree: 104.543.199.235.102.96.112
 - Sorting: 455.905.49.242.658
 - Greedy: 122.135.455.376.55
 - Bit Manipulation: 136.393
