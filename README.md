@@ -27,11 +27,13 @@
 - 387: First Unique Character in a String - Easy
 - 804: Unique Morse Code Words - Easy
 - 342: Power of Four - Easy
-- 234: Palindrome Linked List - Easy
+- 234: Palind
+- 653: rome Linked List - Easy
 - 326: Power of Three - Easy
 - 383: Ransom Note - Easy
 - 160: Intersection of Two Linked Lists - Easy
 - 112: Path Sum - Easy
+- 653: Two Sum IV - Input is a BST - Easy
 
 ---
 
@@ -75,17 +77,17 @@
 
 - Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118.877.804.393.658
 - Recursion: 2.104.543.342.234.326
-- Hash Table: 1.141.202.525.49.560.146.76.242.94.387.804.383.160
+- Hash Table: 1.141.202.525.49.560.146.76.242.94.387.804.383.160.653
 - Linked List: 2.61.141.707.876.142.146.234.160.19
 - Math: 2.7.202.292.877.319.13.342.326.96
 - String: 8.844.49.678.76.242.13.387.804.383
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877.300.96
-- Two Pointers: 61.141.202.283.844.876.905.142.76.234.160.19.658
-- Tree: 104.543.1008.509.199.98.94.235.102.96.112
-- Depth-First Search: 104.543.200.1008.199.98.112
-- Breadth-First Search: 104.200.199.877.102.112
-- Binary Tree: 104.543.199.235.102.96.112
+- Two Pointers: 61.141.202.283.844.876.905.142.76.234.160.19.658.653
+- Tree: 104.543.1008.509.199.98.94.235.102.96.112.653
+- Depth-First Search: 104.543.200.1008.199.98.112.653
+- Breadth-First Search: 104.200.199.877.102.112.653
+- Binary Tree: 104.543.199.235.102.96.112.653
 - Sorting: 455.905.49.242.658
 - Greedy: 122.135.455.376.55
 - Bit Manipulation: 136.393
@@ -95,7 +97,7 @@
 - Simulation: 844
 - Design: 155.707.146
 - Union Find: 200.128
-- Binary Search: 33.300.658
+- Binary Search: 33.300.658.653
 - Bit-Manipulation: 201.342
 - Trie: 746
 - Brainteaser: 292.319
