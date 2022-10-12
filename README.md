@@ -34,6 +34,7 @@
 - 160: Intersection of Two Linked Lists - Easy
 - 112: Path Sum - Easy
 - 653: Two Sum IV - Input is a BST - Easy
+- 20: Valid Parentheses - Easy
 
 ---
 
@@ -80,7 +81,7 @@
 - Hash Table: 1.141.202.525.49.560.146.76.242.94.387.804.383.160.653
 - Linked List: 2.61.141.707.876.142.146.234.160.19
 - Math: 2.7.202.292.877.319.13.342.326.96
-- String: 8.844.49.678.76.242.13.387.804.383
+- String: 8.844.49.678.76.242.13.387.804.383.20
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877.300.96
 - Two Pointers: 61.141.202.283.844.876.905.142.76.234.160.19.658.653
@@ -91,7 +92,7 @@
 - Sorting: 455.905.49.242.658
 - Greedy: 122.135.455.376.55
 - Bit Manipulation: 136.393
-- Stack: 155.844.94.234
+- Stack: 155.844.94.234.20
 - Heap: 1046.658
 - Prefix Sum: 525
 - Simulation: 844
