@@ -16,13 +16,12 @@ char *defangIPaddr(char *address)
         {
             *r++ = '[';
             *r++ = '.';
-            *r = ']';
+            *r++ = ']';
+            *address++;
         }
         else
-            *r = *address;
+            *r++ = *address++;
 
-        ++r;
-        ++address;
     }
 
     return start;
