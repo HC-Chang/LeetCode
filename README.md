@@ -38,6 +38,7 @@
 - 237: Delete Node in a Linked List - Easy
 - 1832: Check if the Sentence Is Pangram - Easy
 - 2235: Add Two Integers - Easy
+- 1108: Defanging an IP Address - Easy
 
 ---
 
@@ -86,7 +87,7 @@
 - Hash Table: 1.141.202.525.49.560.146.76.242.94.387.804.383.160.653.1832.692
 - Linked List: 2.61.141.707.876.142.146.234.160.19.237.2095
 - Math: 2.7.202.292.877.319.13.342.326.96
-- String: 8.844.49.678.76.242.13.387.804.383.20.1832
+- String: 8.844.49.678.76.242.13.387.804.383.20.1832.1108
 - Divide and Conquer: 53
 - Dynamic Programming: 53.122.518.844.905.64.1008.376.746.55.118.877.300.96
 - Two Pointers: 61.141.202.283.844.876.905.142.76.234.160.19.658.653.2095
