@@ -1,11 +1,11 @@
 /*
- * @lc app=leetcode id=724 lang=c
+ * @lc app=leetcode id=1991 lang=c
  *
- * [724] Find Pivot Index
+ * [1991] Find the Middle Index in Array
  */
 
 // @lc code=start
-int pivotIndex(int *nums, int numsSize)
+int findMiddleIndex(int *nums, int numsSize)
 {
     int left_sum = 0;
     int right_sum = 0;
@@ -27,5 +27,5 @@ int pivotIndex(int *nums, int numsSize)
 }
 // @lc code=end
 // Note: 
-// This question is the same as 1991: https://leetcode.com/problems/find-the-middle-index-in-array/
+// This question is the same as 724: https://leetcode.com/problems/find-pivot-index/
 
