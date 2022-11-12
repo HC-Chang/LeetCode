@@ -53,6 +53,7 @@
 - 121: Best Time to Buy and Sell Stock - Easy
 - 409: Longest Palindrome - Easy
 - 704: Binary Search - Easy
+- 278: First Bad Version - Easy
 
 ---
 
@@ -118,7 +119,7 @@
 - Simulation: 844
 - Design: 155.707.146
 - Union Find: 200.128
-- Binary Search: 33.300.658.653.704
+- Binary Search: 33.300.658.653.704.278
 - Bit-Manipulation: 201.342
 - Trie: 746
 - Brainteaser: 292.319
