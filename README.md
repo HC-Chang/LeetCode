@@ -1,102 +1,45 @@
 # LeetCode
+[LeetCode 75](#leetcode-75)
+## LeetCode 75:
 
-## Complete:
+### Level 1
 
-- 1: Two Sum - Easy
-- 455: Assign Cookies - Easy
-- 136: Single Number - Easy
-- 905: Sort Array By Parity - Easy
-- 202: Happy Number - Easy
-- 53: Maximum Subarray - Easy
-- 283: Move Zeroes - Easy
-- 876: Middle of the Linked List - Easy
-- 844: Backspace String Compare - Easy
-- 155: Min Stack - Easy
-- 104: Maximum Depth of Binary Tree - Easy
-- 543: Diameter of Binary Tree - Easy
-- 1046: Last Stone Weight - Easy
-- 141: Linked List Cycle - Easy
-- 509: Fibonacci Number - Easy
-- 746: Min Cost Climbing Stairs - Easy
-- 118: Pascal’s Triangle - Easy
-- 292: Nim Game - Easy
-- 242: Valid Anagram - Easy
-- 94: Binary Tree Inorder Traversal - Easy
-- 235: Lowest Common Ancestor of a Binary Search Tree - Easy
-- 13: Roman to Integer - Easy
-- 387: First Unique Character in a String - Easy
-- 804: Unique Morse Code Words - Easy
-- 342: Power of Four - Easy
-- 234: Palind
-- 653: rome Linked List - Easy
-- 326: Power of Three - Easy
-- 383: Ransom Note - Easy
-- 160: Intersection of Two Linked Lists - Easy
-- 112: Path Sum - Easy
-- 653: Two Sum IV - Input is a BST - Easy
-- 20: Valid Parentheses - Easy
-- 237: Delete Node in a Linked List - Easy
-- 1832: Check if the Sentence Is Pangram - Easy
-- 2235: Add Two Integers - Easy
-- 1108: Defanging an IP Address - Easy
-- 645: Set Mismatch - Easy
-- 21: Merge Two Sorted Lists - Easy
-- 1662: Check If Two String Arrays are Equivalent - Easy
-- 766: Toeplitz Matrix - Easy
-- 1480: Running Sum of 1d Array - Easy
-- 724: Find Pivot Index - Easy
-- 1991: Find the Middle Index in Array - Easy
-- 1323: Maximum 69 Number - Easy
-- 206: Reverse Linked List - Easy
-- 205: Isomorphic Strings - Easy
-- 392: Is Subsequence - Easy
-- 121: Best Time to Buy and Sell Stock - Easy
-- 409: Longest Palindrome - Easy
-- 704: Binary Search - Easy
-- 278: First Bad Version - Easy
+| Day |            Tag             | Title                                                | Difficulty |
+| :-- | :------------------------: | :--------------------------------------------------- | :--------: |
+| 1   |         Prefix Sum         | [1480.Running Sum of 1d Array]                       |    Easy    |
+|     |                            | [724.Find Pivot Index]                               |    Easy    |
+| 2   |           String           | [205.Isomorphic Strings]                             |    Easy    |
+|     |                            | [392.Is Subsequence]                                 |    Easy    |
+| 3   |        Linked List         | [21.Merge Two Sorted Lists]                          |    Easy    |
+|     |                            | [206.Reverse Linked List]                            |    Easy    |
+| 4   |                            | [876.Middle of the Linked List]                      |    Easy    |
+|     |                            | [142.Linked List Cycle II]                           |   Medium   |
+| 5   |           Greedy           | [121.Best Time to Buy and Sell Stock]                |    Easy    |
+|     |                            | [409.Longest Palindrome]                             |    Easy    |
+| 6   |            Tree            | 589.N-ary Tree Preorder Traversal                    |    Easy    |
+|     |                            | 102.Binary Tree Level Order Traversal                |   Medium   |
+| 7   |       Binary Search        | [704.Binary Search]                                  |    Easy    |
+|     |                            | [278.First Bad Version]                              |    Easy    |
+| 8   |            BST             | [98.Validate Binary Search Tree]                     |   Medium   |
+|     |                            | [235.Lowest Common Ancestor of a Binary Search Tree] |   Medium   |
+| 9   |      Graphic/BFS/DFS       | 733.Flood Fill                                       |    Easy    |
+|     |                            | 200.Number of Islands                                |   Medium   |
+| 10  |             DP             | 509.Fibonacci Number                                 |    Easy    |
+|     |                            | 70.Climbing Stairs                                   |    Easy    |
+| 11  |                            | 746.Min Cost Climbing Stairs                         |    Easy    |
+|     |                            | 62.Unique Paths                                      |   Medium   |
+| 12  | Sliding Window/Two Pointer | 438.Find All Anagrams in a String                    |   Medium   |
+|     |                            | 424.Longest Repeating Character Replacement          |   Medium   |
+| 13  |          Hashmap           | 1.Two Sum                                            |    Easy    |
+|     |                            | 299.Bulls and Cows                                   |   Medium   |
+| 14  |           Stack            | 844.Backspace String Compare                         |    Easy    |
+|     |                            | 394.Decode String                                    |   Medium   |
+| 15  |            Heap            | 1046.Last Stone Weight                               |    Easy    |
+|     |                            | 692.Top K Frequent Words                             |   Medium   |
 
 ---
 
-- 7:  Reverse Integer - Medium
-- 2: Add Two Numbers - Medium
-- 61: Rotate List - Medium
-- 8: String to Integer (atoi) - Medium
-- 518: Coin Change 2 - Medium
-- 122: Best Time to Buy and Sell Stock II - Medium
-- 707: Design Linked List - Medium
-- 525: Contiguous Array - Medium
-- 142: Linked List Cycle II - Medium
-- 238: Product of Array Except Self - Medium
-- 678: Valid Parenthesis String - Medium
-- 200: Number of Islands - Medium
-- 64: Minimum Path Sum - Medium
-- 33: Search in Rotated Sorted Array - Medium
-- 1008: Construct Binary Search Tree from Preorder Traversal - Medium
-- 560: Subarray Sum Equals K - Medium
-- 376: Wiggle Subsequence - Medium
-- 201: Bitwise AND of Numbers Range - Medium
-- 199: Binary Tree Right Side View - Medium
-- 55: Jump Game - Medium
-- 877: Stone Game - Medium
-- 319: Bulb Switcher - Medium
-- 300: Longest Increasing Subsequence - Medium
-- 98: Validate Binary Search Tree - Medium
-- 49: Group Anagrams - Medium
-- 393: UTF-8 Validation - Medium
-- 96: Unique Binary Search Trees - Medium
-- 19: Remove Nth Node From End of List - Medium
-- 658: Find K Closest Elements - Medium
-- 2095: Delete the Middle Node of a Linked List - Medium
-- 692: Top K Frequent Words - Medium
-- 151: Reverse Words in a String - Medium
-
----
-
-- 135: Candy - Hard
-- 76: Minimum Window Substring - Hard
-
----
-## Note:
+## Tag:
 
 - Array: 1.53.122.135.136.283.455.518.525.905.1046.238.64.33.560.128.746.55.118.877.804.393.658.645.1662.766.1480.724.1991.121.704
 - Recursion: 2.104.543.342.234.326.21.206
@@ -128,9 +71,26 @@
 - Game Theory: 292.877
 - Minimax: 292
 - Sliding Window: 76
+
 ---
+
 ## Todo:
 
 - 128: Longest Consecutive Sequence - Medium
 - 146: LRU Cache - Medium
 - 102: Binary Tree Level Order Traversal - Medium
+
+[1480.running sum of 1d array]: complete/1480.Running-Sum-of-1-d-Array.c
+[724.find pivot index]: complete/724.Find-Pivot-Index.c
+[205.isomorphic strings]: complete/205.Isomorphic-Strings.c
+[392.is subsequence]: complete/392.Is-Subsequence.c
+[21.merge two sorted lists]: complete/21.Merge-Two-Sorted-Lists.c
+[206.reverse linked list]: complete/206.Reverse-Linked-List.c
+[876.middle of the linked list]: complete/876.Middle-of-the-Linked-List.c
+[142.linked list cycle ii]: complete/142.Linked-List-Cycle-II.c
+[121.best time to buy and sell stock]: complete/121.Best-Time-to-Buy-and-Sell-Stock.c
+[409.longest palindrome]: complete/409.Longest-Palindrome.c
+[704.binary search]: complete/704.Binary-Search.c
+[278.first bad version]: complete/278.First-Bad-Version.c
+[98.validate binary search tree]: complete/98.Validate-Binary-Search-Tree.c
+[235.lowest common ancestor of a binary search tree]: complete/235.Lowest-Common-Ancestor-of-a-Binary-Search-Tree.c
