@@ -1,5 +1,7 @@
 # LeetCode
-[LeetCode 75](#leetcode-75)
+- [LeetCode 75](#leetcode-75)
+- [Tag](#tag)
+
 ## LeetCode 75:
 
 ### Level 1
