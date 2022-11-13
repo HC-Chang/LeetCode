@@ -80,17 +80,18 @@
 - 146: LRU Cache - Medium
 - 102: Binary Tree Level Order Traversal - Medium
 
-[1480.running sum of 1d array]: complete/1480.Running-Sum-of-1-d-Array.c
-[724.find pivot index]: complete/724.Find-Pivot-Index.c
-[205.isomorphic strings]: complete/205.Isomorphic-Strings.c
-[392.is subsequence]: complete/392.Is-Subsequence.c
-[21.merge two sorted lists]: complete/21.Merge-Two-Sorted-Lists.c
-[206.reverse linked list]: complete/206.Reverse-Linked-List.c
-[876.middle of the linked list]: complete/876.Middle-of-the-Linked-List.c
-[142.linked list cycle ii]: complete/142.Linked-List-Cycle-II.c
-[121.best time to buy and sell stock]: complete/121.Best-Time-to-Buy-and-Sell-Stock.c
-[409.longest palindrome]: complete/409.Longest-Palindrome.c
-[704.binary search]: complete/704.Binary-Search.c
-[278.first bad version]: complete/278.First-Bad-Version.c
-[98.validate binary search tree]: complete/98.Validate-Binary-Search-Tree.c
-[235.lowest common ancestor of a binary search tree]: complete/235.Lowest-Common-Ancestor-of-a-Binary-Search-Tree.c
+[1480.running sum of 1d array]: complete/1480.running-sum-of-1-d-array.c
+[724.find pivot index]: complete/724.find-pivot-index.c
+[205.isomorphic strings]: complete/205.isomorphic-strings.c
+[392.is subsequence]: complete/392.is-subsequence.c
+[21.merge two sorted lists]: complete/21.merge-two-sorted-lists.c
+[206.reverse linked list]: complete/206.reverse-linked-list.c
+[876.middle of the linked list]: complete/876.middle-of-the-linked-list.c
+[142.linked list cycle ii]: complete/142.linked-list-cycle-ii.c
+[121.best time to buy and sell stock]: complete/121.best-time-to-buy-and-sell-stock.c
+[409.longest palindrome]: complete/409.longest-palindrome.c
+
+[704.binary search]: complete/704.binary-search.c
+[278.first bad version]: complete/278.first-bad-version.c
+[98.validate binary search tree]: complete/98.validate-binary-search-tree.c
+[235.lowest common ancestor of a binary search tree]: complete/235.lowest-common-ancestor-of-a-binary-search-tree.c
