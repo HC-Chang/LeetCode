@@ -65,7 +65,7 @@
 - Simulation: 844
 - Design: 155.707.146
 - Union Find: 200.128
-- Binary Search: 33.300.658.653.704.278.222
+- Binary Search: 33.300.658.653.704.278.222.374
 - Bit-Manipulation: 201.342
 - Trie: 746
 - Brainteaser: 292.319

@@ -23,6 +23,7 @@ void count(struct TreeNode *root, int *c)
     if (root->right)
         count(root->right, c);
 }
+
 int countNodes(struct TreeNode *root)
 {
     int c = 0;
