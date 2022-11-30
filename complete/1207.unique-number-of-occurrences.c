@@ -5,24 +5,40 @@
  */
 
 // @lc code=start
-#define SIZE 1000
 bool uniqueOccurrences(int *arr, int arrSize)
 {
-    int map[SIZE * 2 + 1] = {0};
+    // Solution 2:
+    int map1[2001] = {0};
+    int map2[1000] = {0};
     for (int i = 0; i < arrSize; i++)
-        ++map[arr[i] + SIZE];
-    int map_size = SIZE * 2 + 1;
-    for (int i = 0; i < map_size; i++)
+        ++map1[arr[i] + 1000];
+    for (int i = 0; i < 2001; i++)
     {
-        for (int j = i + 1; j < map_size; j++)
-        {
-            if (map[i] == 0)
-                continue;
-            if (map[i] == map[j])
-                return false;
-        }
+        if (map1[i] == 0)
+            continue;
+        if (map2[map1[i]] != 0)
+            return false;
+        ++map2[map1[i]];
     }
-
     return true;
 }
 // @lc code=end
+
+// // Solution 1:
+// #define SIZE 1000
+// int map[SIZE * 2 + 1] = {0};
+// for (int i = 0; i < arrSize; i++)
+//     ++map[arr[i] + SIZE];
+// int map_size = SIZE * 2 + 1;
+// for (int i = 0; i < map_size; i++)
+// {
+//     for (int j = i + 1; j < map_size; j++)
+//     {
+//         if (map[i] == 0)
+//             continue;
+//         if (map[i] == map[j])
+//             return false;
+//     }
+// }
+
+// return true;
