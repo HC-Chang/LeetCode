@@ -106,8 +106,6 @@ int compare(const void *a, const void *b)
 
     if (n1->frequence == n2->frequence)
     {
-        int idx1 = 0;
-        int idx2 = 0;
         return strcmp(n2->str, n1->str);
     }
     return n1->frequence - n2->frequence;
