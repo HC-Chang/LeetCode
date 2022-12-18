@@ -25,7 +25,7 @@ STACK *stackCreate()
     return obj;
 }
 
-void stackPush(STACK *obj, int val)
+void push_stack(STACK *obj, int val)
 {
     LIST *node = calloc(1, sizeof(LIST));
     node->data = val;
@@ -39,7 +39,7 @@ void stackPush(STACK *obj, int val)
     }
 }
 
-void stackPop(STACK *obj)
+void pop_stack(STACK *obj)
 {
     if (obj->head == NULL)
         return;
@@ -57,12 +57,12 @@ void stackPop(STACK *obj)
     }
 }
 
-bool stackIsEmpty(STACK *obj)
+bool is_empty_stack(STACK *obj)
 {
     return (obj->head == NULL ? true : false);
 }
 
-int stackTop(STACK *obj)
+int top_stack(STACK *obj)
 {
     if (obj->head != NULL)
     {
@@ -71,7 +71,7 @@ int stackTop(STACK *obj)
     return (-1);
 }
 
-void stackFree(STACK *obj)
+void free_stack(STACK *obj)
 {
     while (obj->head != NULL)
     {
@@ -107,16 +107,16 @@ MyQueue *myQueueCreate()
 
 void myQueuePush(MyQueue *obj, int x)
 {
-    stackPush(obj->s[MAIN_S], x);
+    push_stack(obj->s[MAIN_S], x);
 }
 
 void myQueueMoveStack(MyQueue *obj)
 {
-    while (!stackIsEmpty(obj->s[MAIN_S]))
+    while (!is_empty_stack(obj->s[MAIN_S]))
     {
-        int tmp = stackTop(obj->s[MAIN_S]);
-        stackPop(obj->s[MAIN_S]);
-        stackPush(obj->s[BACK_S], tmp);
+        int tmp = top_stack(obj->s[MAIN_S]);
+        pop_stack(obj->s[MAIN_S]);
+        push_stack(obj->s[BACK_S], tmp);
     }
 }
 
@@ -126,12 +126,12 @@ int myQueuePop(MyQueue *obj)
     if (myQueueEmpty(obj))
         return result;
 
-    if (stackIsEmpty(obj->s[BACK_S]))
+    if (is_empty_stack(obj->s[BACK_S]))
         myQueueMoveStack(obj);
 
-    result = stackTop(obj->s[BACK_S]);
-    stackPop(obj->s[BACK_S]);
-    if (stackIsEmpty(obj->s[BACK_S]))
+    result = top_stack(obj->s[BACK_S]);
+    pop_stack(obj->s[BACK_S]);
+    if (is_empty_stack(obj->s[BACK_S]))
         myQueueMoveStack(obj);
     return result;
 }
@@ -142,23 +142,23 @@ int myQueuePeek(MyQueue *obj)
         return -1;
     else
     {
-        if (stackIsEmpty(obj->s[BACK_S]))
+        if (is_empty_stack(obj->s[BACK_S]))
             myQueueMoveStack(obj);
-        return stackTop(obj->s[BACK_S]);
+        return top_stack(obj->s[BACK_S]);
     }
 }
 
 int myQueueEmpty(MyQueue *obj)
 {
-    if ((stackIsEmpty(obj->s[MAIN_S])) && (stackIsEmpty(obj->s[BACK_S])))
+    if ((is_empty_stack(obj->s[MAIN_S])) && (is_empty_stack(obj->s[BACK_S])))
         return true;
     return false;
 }
 
 void myQueueFree(MyQueue *obj)
 {
-    stackFree(obj->s[MAIN_S]);
-    stackFree(obj->s[BACK_S]);
+    free_stack(obj->s[MAIN_S]);
+    free_stack(obj->s[BACK_S]);
     free(obj);
 }
 
