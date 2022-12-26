@@ -48,6 +48,7 @@
 - Recursion: 2.104.543.342.234.326.21.206
 - Hash Table: 1.141.202.525.49.560.146.76.242.94.387.804.383.160.653.1832.692.645.205.409.1207.451
 - Linked List: 2.61.141.707.876.142.146.234.160.19.237.2095.21.766.206.328
+- Doubly-Linked List: 146
 - Math: 2.7.202.292.877.319.13.342.326.96.1323.70.150
 - String: 8.844.49.678.76.242.13.387.804.383.20.1832.1108.1662.205.392.409.151.1704.451.1143
 - Divide and Conquer: 53
@@ -81,7 +82,6 @@
 ## Todo:
 
 - 128: Longest Consecutive Sequence - Medium
-- 146: LRU Cache - Medium
 - 102: Binary Tree Level Order Traversal - Medium
 
 [1480.running sum of 1d array]: complete/1480.running-sum-of-1-d-array.c
