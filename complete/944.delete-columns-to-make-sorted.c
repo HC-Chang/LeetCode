@@ -27,3 +27,5 @@ int minDeletionSize(char **strs, int strsSize)
     return count;
 }
 // @lc code=end
+
+// if not sorted: strs[0][i] = -1
