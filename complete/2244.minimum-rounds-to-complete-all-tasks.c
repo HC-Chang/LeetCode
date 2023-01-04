@@ -26,7 +26,8 @@ int minimumRounds(int *tasks, int tasksSize)
             return -1;
         else
         {
-            count += (tmp_count - 1) / 3 + 1;
+            // count += (tmp_count - 1) / 3 + 1;
+            count += (tmp_count + 2) / 3;
             tmp = tasks[i];
             tmp_count = 1;
         }
@@ -34,25 +35,28 @@ int minimumRounds(int *tasks, int tasksSize)
     if (tmp_count == 1)
         return -1;
     else
-        count += (tmp_count - 1) / 3 + 1;
+        // count += (tmp_count - 1) / 3 + 1;
+        count += (tmp_count + 2) / 3;
 
     return count;
 }
 
 // @lc code=end
 
-// 1 -1
-// 2 1
-// 3 1
-// 4 2
-// 5 2
-// 6 2
-// 7 3
-// 8 3
-// 9 3
-// 10 4
-// 11 4
-// 12 4
-// 13 5
-// 14 5
-// 15 5
+// |task count|minimum rounds|
+// |:--------:|:------------:|
+// |    1     |      -1      |
+// |    2     |      1       |
+// |    3     |      1       |
+// |    4     |      2       |
+// |    5     |      2       |
+// |    6     |      2       |
+// |    7     |      3       |
+// |    8     |      3       |
+// |    9     |      3       |
+// |    10    |      4       |
+// |    11    |      4       |
+// |    12    |      4       |
+// |    13    |      5       |
+// |    14    |      5       |
+// |    15    |      5       |
