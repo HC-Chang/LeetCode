@@ -8,22 +8,22 @@
 int canCompleteCircuit(int *gas, int gasSize, int *cost, int costSize)
 {
     int start = 0;
-    int sum = 0;
-    int total = 0;
+    int target_station_sum = 0;
+    int total_gas = 0;
 
     for (int i = 0; i < gasSize; i++)
     {
-        total += gas[i] - cost[i];
-        sum += gas[i] - cost[i];
+        target_station_sum += gas[i] - cost[i];
+        total_gas += gas[i] - cost[i];
 
-        if (sum < 0)
+        if (target_station_sum < 0)
         {
-            sum = 0;
+            target_station_sum = 0;
             start = i + 1;
         }
     }
 
-    if (total < 0)
+    if (total_gas < 0)
         return -1;
     return start;
 }
