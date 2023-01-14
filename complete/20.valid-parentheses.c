@@ -8,7 +8,11 @@
 
 bool isValid(char *s)
 {
-    char *stack = calloc(strlen(s), sizeof(char));
+    // Solution 1: pointer
+    // char *stack = calloc(strlen(s), sizeof(char));
+    
+    // Solution 2: array
+    char stack[10000] = {0};
     int index = 0;
     while (*s)
     {
@@ -25,13 +29,9 @@ bool isValid(char *s)
         case ']':
         case '}':
             if (index - 1 < 0)
-            {
                 return false;
-            }
             if (stack[index - 1] != *s)
-            {
                 return false;
-            }
             index--;
             break;
         default:
@@ -40,7 +40,7 @@ bool isValid(char *s)
         s++;
     }
 
-    free(stack);
+    // free(stack);
 
     return index == 0;
 }
