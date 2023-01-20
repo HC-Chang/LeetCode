@@ -176,3 +176,10 @@ void myQueueFree(MyQueue *obj)
  * myQueueFree(obj);
 */
 // @lc code=end
+
+// stack api:
+// - push
+// - pop
+// - top
+// - is_empty
+// - free (optional)
