@@ -84,7 +84,7 @@
 
 ## Todo:
 
-- 102: Binary Tree Level Order Traversal - Medium
+
 
 [1480.running sum of 1d array]: complete/1480.running-sum-of-1-d-array.c
 [724.find pivot index]: complete/724.find-pivot-index.c
