@@ -67,9 +67,9 @@
 - Heap: 1046.658.692.451.973.787
 - Prefix Sum: 525.2256.974
 - Simulation: 844.67
-- Design: 155.707.146.(232.225)
+- Design: 155.707.146.(232.225).352
 - Union Find: 200.128.1061.2421.1971
-- Binary Search: 33.300.658.653.704.278.222.374
+- Binary Search: 33.300.658.653.704.278.222.374.352
 - Trie: 746.472
 - Brainteaser: 292.319
 - Game Theory: 292.877
@@ -81,6 +81,7 @@
 - Graph: 2246.2421.1971.997.2359.787
 - Backtracking: 491.93.131
 - Shortest Path: 787
+- Ordered Set: 352
 
 ---
 
