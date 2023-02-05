@@ -13,8 +13,6 @@ int *minWindow(char *s, char *t, int *returnSize)
 {
     int s_len = strlen(s);
     int t_len = strlen(t);
-    int left = 0;
-    int right = 0;
 
     int start;
     int *r = calloc(s_len, sizeof(int));
