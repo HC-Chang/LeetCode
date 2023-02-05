@@ -14,9 +14,9 @@ char *minWindow(char *s, char *t)
     int right = 0;
     int s_valid_count = 0;
     int t_valid_count = 0;
-    char *r;
     int start = 0;
     int r_len = INT_MAX;
+    char *r;
 
     //  A ~ z
     // 65 ~ 122
