@@ -89,6 +89,8 @@ int findMaximizedCapital(int k, int w, int *profits, int profitsSize, int *capit
         last_heap_count = heap_count;
     }
 
+    free(p);
+    free(heap);
     return w;
 }
 // @lc code=end
