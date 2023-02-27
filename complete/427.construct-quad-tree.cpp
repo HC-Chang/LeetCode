@@ -70,7 +70,7 @@ public:
         int sum;
         for (int i = 0; i < size; ++i)
         {
-            int sum = 0;
+            sum = 0;
             for (int j = 0; j < size; ++j)
             {
                 sum += grid[i][j];
