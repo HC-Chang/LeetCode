@@ -6,29 +6,32 @@
 
 // @lc code=start
 
-typedef struct
-{
-    Node *prev;
-    Node *next;
-    char url[20];
-} Node;
+#define NODE struct node
 
-Node *new_node(char *url)
+struct node
 {
-    Node *node = calloc(1, sizeof(Node));
+    struct node *prev;
+    struct node *next;
+    char url[20];
+};
+
+NODE *new_node(char *url)
+{
+    NODE *node = calloc(1, sizeof(NODE));
     strcpy(node->url, url);
     return node;
 }
 
 typedef struct
 {
-    Node *curr;
+    NODE *curr;
 } BrowserHistory;
 
 BrowserHistory *browserHistoryCreate(char *homepage)
 {
     BrowserHistory *obj = calloc(1, sizeof(BrowserHistory));
     obj->curr = new_node(homepage);
+    return obj;
 }
 
 void browserHistoryVisit(BrowserHistory *obj, char *url)
