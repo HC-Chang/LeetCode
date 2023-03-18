@@ -17,7 +17,6 @@ typedef struct
 {
     int *preorder;
     int pre_index;
-    int pre_size;
     int *inorder;
 } TREE_CONSTRUCTOR;
 
@@ -45,7 +44,6 @@ struct TreeNode *buildTree(int *preorder, int preorderSize, int *inorder, int in
 
     t_c.preorder = preorder;
     t_c.pre_index = 0;
-    t_c.pre_size = preorderSize;
     t_c.inorder = inorder;
 
     return make_tree(&t_c, 0, inorderSize);

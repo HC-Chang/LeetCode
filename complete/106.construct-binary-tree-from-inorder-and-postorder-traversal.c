@@ -32,8 +32,8 @@ struct TreeNode *make_tree(TREE_CONSTRUCTOR *t_c, int start, int end)
     while (i < end && t_c->inorder[i] != node->val)
         i++;
 
-    node->right = make_tree(t_c, i + 1, end);
     node->left = make_tree(t_c, start, i);
+    node->right = make_tree(t_c, i + 1, end);
 
     return node;
 }
@@ -41,6 +41,7 @@ struct TreeNode *make_tree(TREE_CONSTRUCTOR *t_c, int start, int end)
 struct TreeNode *buildTree(int *inorder, int inorderSize, int *postorder, int postorderSize)
 {
     TREE_CONSTRUCTOR t_c;
+    
     t_c.postorder = postorder;
     t_c.post_index = postorderSize;
     t_c.inorder = inorder;
