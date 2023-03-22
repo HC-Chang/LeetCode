@@ -16,8 +16,8 @@ UNION *union_find_init(int n)
 {
     UNION *u = malloc(sizeof(UNION));
     u->count = n;
-    u->parent = calloc(n, sizeof(int));
-    u->size = calloc(n, sizeof(unsigned int));
+    u->parent = malloc(n * sizeof(int));
+    u->size = malloc(n * sizeof(unsigned int));
     for (int i = 0; i < n; i++)
     {
         u->parent[i] = i;

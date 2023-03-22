@@ -6,68 +6,78 @@
 
 // @lc code=start
 
-int count;
-int *parent;
-unsigned int *size;
-
-void union_find_init(int n)
+typedef struct
 {
-    count = n;
-    parent = calloc(n, sizeof(int));
-    size = calloc(n, sizeof(unsigned int));
+    int count;
+    int *parent;
+    unsigned int *size;
+} UNION;
+
+UNION *union_find_init(int n)
+{
+    UNION *u = malloc(sizeof(UNION));
+    u->count = n;
+    u->parent = malloc(n * sizeof(int));
+    u->size = malloc(n * sizeof(unsigned int));
     for (int i = 0; i < n; i++)
     {
-        parent[i] = i;
-        size[i] = i;
+        u->parent[i] = i;
+        u->size[i] = i;
     }
+    return u;
 }
 
-void union_p_q(int p, int q)
+void union_p_q(int p, int q, UNION *u)
 {
-    int root_p = find(p);
-    int root_q = find(q);
+    int root_p = find(p, u);
+    int root_q = find(q, u);
     if (root_p == root_q)
         return;
-    if (size[root_p] > size[root_q])
+    if (u->size[root_p] > u->size[root_q])
     {
-        parent[root_q] = root_p;
-        size[root_p] += size[root_q];
+        u->parent[root_q] = root_p;
+        u->size[root_p] += u->size[root_q];
     }
     else
     {
-        parent[root_p] = root_q;
-        size[root_q] += size[root_p];
+        u->parent[root_p] = root_q;
+        u->size[root_q] += u->size[root_p];
     }
-    count--;
+    u->count--;
 }
 
-bool is_connected(int p, int q)
+int find(int x, UNION *u)
 {
-    int root_p = find(p);
-    int root_q = find(q);
-    return root_p == root_q;
-}
-
-int find(int x)
-{
-    while (parent[x] != x)
+    while (u->parent[x] != x)
     {
-        parent[x] = parent[parent[x]];
-        x = parent[x];
+        u->parent[x] = u->parent[u->parent[x]];
+        x = u->parent[x];
     }
     return x;
 }
 
-int union_count()
+bool is_connected(int p, int q, UNION *u)
 {
-    return count;
+    int root_p = find(p, u);
+    int root_q = find(q, u);
+    return root_p == root_q;
 }
+
+void union_free(UNION *u)
+{
+    free(u->parent);
+    free(u->size);
+    free(u);
+}
+
 bool validPath(int n, int **edges, int edgesSize, int *edgesColSize, int source, int destination)
 {
-    union_find_init(n);
+    UNION *u = union_find_init(n);
     for (int i = 0; i < edgesSize; i++)
-        union_p_q(edges[i][0], edges[i][1]);
-    
-    return is_connected(source, destination);
+        union_p_q(edges[i][0], edges[i][1], u);
+
+    bool b = is_connected(source, destination, u);
+    union_free(u);
+    return b;
 }
 // @lc code=end
