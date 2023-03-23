@@ -88,3 +88,5 @@ int minScore(int n, int **roads, int roadsSize, int *roadsColSize)
 }
 
 // @lc code=end
+
+// Note: Union-Find
