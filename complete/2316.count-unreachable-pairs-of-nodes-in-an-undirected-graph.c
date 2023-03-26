@@ -44,7 +44,7 @@ void union_p_q(int p, int q, UNION *u)
         u->parent[root_p] = root_q;
         u->size[root_q] += u->size[root_p];
     }
-    // u->count--;
+    u->count--;
 }
 
 int find(int x, UNION *u)
