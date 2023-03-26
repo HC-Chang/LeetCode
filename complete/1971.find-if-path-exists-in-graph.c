@@ -22,7 +22,7 @@ UNION *union_find_init(int n)
     for (int i = 0; i < n; i++)
     {
         u->parent[i] = i;
-        u->size[i] = i;
+        u->size[i] = 1;
     }
     return u;
 }
