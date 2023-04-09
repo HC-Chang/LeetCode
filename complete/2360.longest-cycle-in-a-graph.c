@@ -55,3 +55,5 @@ int longestCycle(int *edges, int edgesSize)
 }
 
 // @lc code=end
+
+// Note: Topological Sort
