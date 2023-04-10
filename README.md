@@ -20,23 +20,23 @@
 | 5   |           Greedy           | [121.Best Time to Buy and Sell Stock]                |    Easy    |
 |     |                            | [409.Longest Palindrome]                             |    Easy    |
 | 6   |            Tree            | [589.N-ary Tree Preorder Traversal]                  |    Easy    |
-|     |                            | 102.Binary Tree Level Order Traversal                |   Medium   |
+|     |                            | [102.Binary Tree Level Order Traversal]              |   Medium   |
 | 7   |       Binary Search        | [704.Binary Search]                                  |    Easy    |
 |     |                            | [278.First Bad Version]                              |    Easy    |
 | 8   |            BST             | [98.Validate Binary Search Tree]                     |   Medium   |
 |     |                            | [235.Lowest Common Ancestor of a Binary Search Tree] |   Medium   |
-| 9   |      Graphic/BFS/DFS       | 733.Flood Fill                                       |    Easy    |
+| 9   |      Graphic/BFS/DFS       | [733.Flood Fill]                                     |    Easy    |
 |     |                            | [200.Number of Islands]                              |   Medium   |
 | 10  |             DP             | [509.Fibonacci Number]                               |    Easy    |
 |     |                            | [70.Climbing Stairs]                                 |    Easy    |
 | 11  |                            | [746.Min Cost Climbing Stairs]                       |    Easy    |
-|     |                            | 62.Unique Paths                                      |   Medium   |
-| 12  | Sliding Window/Two Pointer | 438.Find All Anagrams in a String                    |   Medium   |
-|     |                            | 424.Longest Repeating Character Replacement          |   Medium   |
+|     |                            | [62.Unique Paths]                                    |   Medium   |
+| 12  | Sliding Window/Two Pointer | [438.Find All Anagrams in a String]                  |   Medium   |
+|     |                            | [424.Longest Repeating Character Replacement]        |   Medium   |
 | 13  |          Hashmap           | [1.Two Sum]                                          |    Easy    |
-|     |                            | 299.Bulls and Cows                                   |   Medium   |
+|     |                            | [299.Bulls and Cows]                                 |   Medium   |
 | 14  |           Stack            | [844.Backspace String Compare]                       |    Easy    |
-|     |                            | 394.Decode String                                    |   Medium   |
+|     |                            | [394.Decode String]                                  |   Medium   |
 | 15  |            Heap            | [1046.Last Stone Weight]                             |    Easy    |
 |     |                            | [692.Top K Frequent Words]                           |   Medium   |
 
@@ -89,8 +89,6 @@
 
 ## Todo:
 
-
-
 [1480.running sum of 1d array]: complete/1480.running-sum-of-1-d-array.c
 [724.find pivot index]: complete/724.find-pivot-index.c
 [205.isomorphic strings]: complete/205.isomorphic-strings.c
@@ -101,16 +99,23 @@
 [142.linked list cycle ii]: complete/142.linked-list-cycle-ii.c
 [121.best time to buy and sell stock]: complete/121.best-time-to-buy-and-sell-stock.c
 [409.longest palindrome]: complete/409.longest-palindrome.c
-[589.N-ary Tree Preorder Traversal]: complete/589.n-ary-tree-preorder-traversal.c
+[589.n-ary tree preorder traversal]: complete/589.n-ary-tree-preorder-traversal.c
+[102.binary tree level order traversal]: complete/102.binary-tree-level-order-traversal.c
 [704.binary search]: complete/704.binary-search.c
 [278.first bad version]: complete/278.first-bad-version.c
 [98.validate binary search tree]: complete/98.validate-binary-search-tree.c
 [235.lowest common ancestor of a binary search tree]: complete/235.lowest-common-ancestor-of-a-binary-search-tree.c
-[200.Number of Islands]: complete/200.number-of-islands.c
-[509.Fibonacci Number]: complete/509.fibonacci-number.c
-[70.Climbing Stairs]: complete/70.climbing-stairs.c
-[746.Min Cost Climbing Stairs]: complete/746.min-cost-climbing-stairs.c
-[1.Two Sum]: complete/1.two-sum.c
-[844.Backspace String Compare]: complete/844.backspace-string-compare.c
-[1046.Last Stone Weight]: complete/1046.last-stone-weight.c
-[692.Top K Frequent Words]: complete/692.top-k-frequent-words.c
+[733.flood fill]: complete/733.flood-fill.c
+[200.number of islands]: complete/200.number-of-islands.c
+[509.fibonacci number]: complete/509.fibonacci-number.c
+[70.climbing stairs]: complete/70.climbing-stairs.c
+[746.min cost climbing stairs]: complete/746.min-cost-climbing-stairs.c
+[62.unique paths]: complete/62.unique-paths.c
+[438.find all anagrams in a string]: complete/438.find-all-anagrams-in-a-string.c
+[424.longest repeating character replacement]: complete/424.longest-repeating-character-replacement.c
+[1.two sum]: complete/1.two-sum.c
+[299.bulls and cows]: complete/299.bulls-and-cows.c
+[844.backspace string compare]: complete/844.backspace-string-compare.c
+[394.decode string]: complete/394.decode-string.c
+[1046.last stone weight]: complete/1046.last-stone-weight.c
+[692.top k frequent words]: complete/692.top-k-frequent-words.c
