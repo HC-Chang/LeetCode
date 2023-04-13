@@ -46,10 +46,9 @@ bool validateStackSequences(int* pushed, int pushedSize, int* popped, int popped
     STACK *s = init_stack(pushedSize);
     
     int popped_index = 0;
-    push_stack(pushed[0], s);
-    for(int i = 1; i< pushedSize; i++)
+    for(int i = 0; i< pushedSize; i++)
     {
-        while(s->index > 0 &&  s->arr[s->index-1] == popped[popped_index])
+        while(s->index > 0 && s->arr[s->index-1] == popped[popped_index])
         { 
             pop_stack(s);
             popped_index++;
