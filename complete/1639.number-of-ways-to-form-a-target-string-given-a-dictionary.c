@@ -25,12 +25,13 @@ int numWays(char **words, int wordsSize, char *target)
     }
 
     long *dp = calloc(N + 1, sizeof(long));
+    int prev, cur;
     for (int i = 0; i < L; ++i)
     {
-        int prev = 1;
+        prev = 1;
         for (int j = 0; j <= i && j < N; ++j)
         {
-            int cur = dp[j + 1];
+            cur = dp[j + 1];
             dp[j + 1] = ((count[i][target[j] - 'a'] * prev) % mod + dp[j + 1]) % mod;
             prev = cur;
         }
