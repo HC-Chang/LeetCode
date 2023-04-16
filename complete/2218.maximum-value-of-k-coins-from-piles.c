@@ -24,7 +24,7 @@ int maxValueOfCoins(int **piles, int pilesSize, int *pilesColSize, int k)
         }
     }
 
-    int ret = 0;
+    int r = 0;
     for (int i = 0; i < pilesSize; i++)
     {
         for (int j = 0; j <= k; j++)
@@ -33,10 +33,14 @@ int maxValueOfCoins(int **piles, int pilesSize, int *pilesColSize, int k)
                 dp[i][j] = max(dp[i][j], (i == 0 ? 0 : dp[i - 1][j - t]) + presum[i][t]);
 
             if (i == pilesSize - 1)
-                ret = max(ret, dp[i][j]);
+                r = max(r, dp[i][j]);
         }
     }
+    for (int i = 0; i < pilesSize; i++)
+        free(presum[i]);
     free(presum);
-    return ret;
+    return r;
 }
 // @lc code=end
+
+// Note: DP + prefix sum
