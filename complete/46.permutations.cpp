@@ -13,36 +13,31 @@
 class Solution
 {
 public:
+    void backtracking(vector<int> nums, vector<int> *track, vector<vector<int>> *res)
+    {
+        if (track->size() == nums.size())
+        {
+            res->push_back(*track);
+            return;
+        }
+
+        for (int i = 0; i < nums.size(); i++)
+        {
+            if (std::find(track->begin(), track->end(), nums[i]) != track->end())
+                continue;
+            track->push_back(nums[i]);
+            backtracking(nums, track, res);
+            track->pop_back();
+        }
+    }
     vector<vector<int>> permute(vector<int> &nums)
     {
-        queue<vector<int>> q;
-        q.push({nums[0]});
-        int n, m;
-        for (int i = 1; i < nums.size(); i++)
-        {
-            n = q.size();
-            for (int j = 0; j < n; j++)
-            {
-                auto p = q.front();
-                q.pop();
-
-                m = p.size();
-                for (int k = 0; k <= m; k++)
-                {
-                    auto temp = p;
-                    temp.insert(temp.begin() + k, nums[i]);
-                    q.push(temp);
-                }
-            }
-        }
-
-        vector<vector<int>> results;
-        while (!q.empty())
-        {
-            results.push_back(q.front());
-            q.pop();
-        }
-        return results;
+        vector<vector<int>> res;
+        vector<int> track;
+        backtracking(nums, &track, &res);
+        return res;
     }
 };
 // @lc code=end
+
+// Note: backtracking
