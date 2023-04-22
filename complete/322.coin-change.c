@@ -6,29 +6,24 @@
 
 // @lc code=start
 // Solution: DP
+int min(int a, int b) { return a < b ? a : b; }
 int coinChange(int *coins, int coinsSize, int amount)
 {
-    int tmp, min_count;
     int *dp = malloc((amount + 1) * sizeof(int));
     dp[0] = 0;
+    for (int i = 1; i < amount + 1; i++)
+        dp[i] = amount + 1;
 
-    for (int i = 1; i <= amount; i++)
+    for (int i = 0; i <= amount; i++)
     {
-        min_count = -1;
         for (int j = 0; j < coinsSize; j++)
         {
-            if (i >= coins[j])
-            {
-                tmp = i - coins[j];
-                if (dp[tmp] == -1)
-                    continue;
-                if (min_count == -1 || min_count > dp[tmp] + 1)
-                    min_count = dp[tmp] + 1;
-            }
+            if (i < coins[j])
+                continue;
+            dp[i] = min(dp[i], 1 + dp[i - coins[j]]);
         }
-        dp[i] = min_count;
     }
-    min_count = dp[amount];
+    int min_count = (dp[amount] == amount + 1) ? -1 : dp[amount];
 
     free(dp);
     return min_count;
