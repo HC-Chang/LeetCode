@@ -21,7 +21,7 @@ struct TreeNode *insert_parent(struct TreeNode *root, int val)
         p = root;
         if (root->val > val)
             root = root->left;
-        else if (root->val < val)
+        else
             root = root->right;
     }
     return p;
