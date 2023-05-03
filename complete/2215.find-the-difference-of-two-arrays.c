@@ -23,22 +23,21 @@ int **findDifference(int *nums1, int nums1Size, int *nums2, int nums2Size, int *
     int **arrs = malloc(*returnSize * sizeof(int *));
     arrs[0] = malloc(nums1Size * sizeof(int));
     arrs[1] = malloc(nums2Size * sizeof(int));
-    int index1 = 0;
-    int index2 = 0;
+    returnColumnSizes[0] = malloc(*returnSize * sizeof(int));
+    returnColumnSizes[0][0] = 0;
+    returnColumnSizes[0][1] = 0;
     for (int i = 0; i < 2001; i++)
     {
         if (map1[i] == 0 && map2[i] == 0)
             continue;
         if (map1[i] > 0 && map2[i] == 0)
-            push_arr(i - 1000, &index1, &(arrs[0][0]));
+            push_arr(i - 1000, &(returnColumnSizes[0][0]), &(arrs[0][0]));
         else if (map2[i] > 0 && map1[i] == 0)
-            push_arr(i - 1000, &index2, &(arrs[1][0]));
+            push_arr(i - 1000, &(returnColumnSizes[0][1]), &(arrs[1][0]));
     }
-    returnColumnSizes[0] = malloc(*returnSize * sizeof(int));
-    returnColumnSizes[0][0] = index1;
-    returnColumnSizes[0][1] = index2;
-    arrs[0] = realloc(arrs[0], index1 * sizeof(int));
-    arrs[1] = realloc(arrs[1], index2 * sizeof(int));
+
+    arrs[0] = realloc(arrs[0], returnColumnSizes[0][0] * sizeof(int));
+    arrs[1] = realloc(arrs[1], returnColumnSizes[0][1] * sizeof(int));
     return arrs;
 }
 // @lc code=end
