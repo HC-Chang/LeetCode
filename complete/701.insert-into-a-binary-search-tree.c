@@ -13,32 +13,33 @@
  *     struct TreeNode *right;
  * };
  */
-void insert(struct TreeNode* insert_node, struct TreeNode* root, int val)
+struct TreeNode *insert_parent(struct TreeNode *root, int val)
 {
-    if(val < root->val)
+    struct TreeNode *p;
+    while (root)
     {
-        if(root->left)
-            insert(insert_node, root->left, val);
-        else
-            root->left = insert_node;  
+        p = root;
+        if (root->val > val)
+            root = root->left;
+        else if (root->val < val)
+            root = root->right;
     }
-    else if(val > root->val)
-    {
-        if(root->right)
-            insert(insert_node, root->right, val);
-        else
-            root->right = insert_node;
-    }
+    return p;
 }
-struct TreeNode* insertIntoBST(struct TreeNode* root, int val){
-    struct TreeNode* insert_node = malloc(sizeof(struct TreeNode));
+
+struct TreeNode *insertIntoBST(struct TreeNode *root, int val)
+{
+    struct TreeNode *insert_node = malloc(sizeof(struct TreeNode));
     insert_node->val = val;
     insert_node->left = NULL;
     insert_node->right = NULL;
-    if(!root)
+    if (!root)
         return insert_node;
-    insert(insert_node, root, val);
+    struct TreeNode *p = insert_parent(root, val);
+    if (p->val > val)
+        p->left = insert_node;
+    else
+        p->right = insert_node;
     return root;
 }
 // @lc code=end
-
