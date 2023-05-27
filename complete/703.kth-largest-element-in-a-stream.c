@@ -12,7 +12,7 @@ struct Heap
     bool (*cmp)(int, int);
 };
 
-void init(struct Heap *obj, int n, bool (*cmp)(int, int))
+void init_heap(struct Heap *obj, int n, bool (*cmp)(int, int))
 {
     obj->heap = malloc(sizeof(int) * (n + 1));
     obj->heapSize = 0;
@@ -30,7 +30,7 @@ void swap(int *a, int *b)
     *a = *b, *b = tmp;
 }
 
-void push(struct Heap *obj, int x)
+void push_heap(struct Heap *obj, int x)
 {
     int p = ++(obj->heapSize), q = p >> 1;
     obj->heap[p] = x;
@@ -43,7 +43,7 @@ void push(struct Heap *obj, int x)
     }
 }
 
-void pop(struct Heap *obj)
+void pop_heap(struct Heap *obj)
 {
     swap(&(obj->heap[1]), &(obj->heap[(obj->heapSize)--]));
     int p = 1, q = p << 1;
@@ -61,7 +61,7 @@ void pop(struct Heap *obj)
     }
 }
 
-int top(struct Heap *obj)
+int top_heap(struct Heap *obj)
 {
     return obj->heap[1];
 }
@@ -76,7 +76,7 @@ KthLargest *kthLargestCreate(int k, int *nums, int numsSize)
 {
     KthLargest *ret = malloc(sizeof(KthLargest));
     ret->heap = malloc(sizeof(struct Heap));
-    init(ret->heap, k + 1, cmp);
+    init_heap(ret->heap, k + 1, cmp);
     ret->maxSize = k;
     for (int i = 0; i < numsSize; i++)
         kthLargestAdd(ret, nums[i]);
@@ -85,10 +85,10 @@ KthLargest *kthLargestCreate(int k, int *nums, int numsSize)
 
 int kthLargestAdd(KthLargest *obj, int val)
 {
-    push(obj->heap, val);
+    push_heap(obj->heap, val);
     if (obj->heap->heapSize > obj->maxSize)
-        pop(obj->heap);
-    return top(obj->heap);
+        pop_heap(obj->heap);
+    return top_heap(obj->heap);
 }
 
 void kthLargestFree(KthLargest *obj)
