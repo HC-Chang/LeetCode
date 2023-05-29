@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=6457 lang=c
+ * @lc app=leetcode id=2710 lang=c
  *
- * [6457] Remove Trailing Zeros From a String
+ * [2710] Remove Trailing Zeros From a String
  */
 
 // Difficulty:Easy
