@@ -20,13 +20,9 @@ int maxOperations(int *nums, int numsSize, int k)
             right--;
         }
         else if (nums[left] + nums[right] < k)
-        {
             left++;
-        }
         else if (nums[left] + nums[right] > k)
-        {
             right--;
-        }
     }
     return count;
 }
