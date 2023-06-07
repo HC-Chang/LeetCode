@@ -19,3 +19,5 @@ int minFlips(int a, int b, int c)
     return count;
 }
 // @lc code=end
+
+// Note: Bit Manipulation
