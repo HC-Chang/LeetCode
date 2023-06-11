@@ -23,14 +23,13 @@ struct TreeNode *deleteNode(struct TreeNode *root, int key)
 {
     if (!root)
         return NULL;
-    struct TreeNode *cur;
     if (root->val == key)
     {
         if (!root->right)
             return root->left;
         else
         {
-            cur = root->right;
+            struct TreeNode *cur = root->right;
             while (cur->left)
                 cur = cur->left;
             swap(&root->val, &cur->val);
