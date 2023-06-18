@@ -5,8 +5,6 @@
  */
 
 // @lc code=start
-#define max(a, b) a > b ? a : b
-
 int lengthOfLongestSubstring(char *s)
 {
     if (!s)
@@ -21,17 +19,13 @@ int lengthOfLongestSubstring(char *s)
     while (right < s_len)
     {
         if (hash[s[right] - 32] == 0)
-        {
-            hash[s[right] - 32] = 1;
-            right++;
-        }
-        else if (hash[s[right] - 32] == 1)
-        {
-            hash[s[left] - 32] = 0;
-            left++;
-        }
+            hash[s[right++] - 32] = 1;
 
-        max_count = max(max_count, right - left);
+        else if (hash[s[right] - 32] == 1)
+            hash[s[left++] - 32] = 0;
+
+        if (right - left > max_count)
+            max_count = right - left;
     }
 
     free(hash);
