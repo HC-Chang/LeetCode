@@ -5,18 +5,16 @@
  */
 
 // @lc code=start
-int min(int a, int b) { return a < b ? a : b; }
-int max(int a, int b) { return a > b ? a : b; }
 int maxArea(int *height, int heightSize)
 {
     int left = 0;
     int right = heightSize - 1;
     int max_area = 0;
     int area;
-    while (left <= right)
+    while (left < right)
     {
-        area = min(height[right], height[left]) * (right - left);
-        max_area = max(max_area, area);
+        area = fmin(height[right], height[left]) * (right - left);
+        max_area = fmax(max_area, area);
         if (height[right] > height[left])
             left++;
         else
