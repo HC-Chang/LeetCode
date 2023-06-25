@@ -11,23 +11,15 @@
 int bin_search_left(int *arr, int arr_size, int target)
 {
     int left = 0;
-    int right = arr_size - 1;
+    int right = arr_size;
     int middle;
-    while (left <= right)
+    while (left < right)
     {
         middle = left + (right - left) / 2;
-        if (target == arr[middle])
-        {
-            right = middle - 1;
-        }
-        else if (target < arr[middle])
-        {
-            right = middle - 1;
-        }
-        else if (target > arr[middle])
-        {
+        if (target > arr[middle])
             left = middle + 1;
-        }
+        else
+            right = middle;
     }
     return left;
 }
