@@ -48,7 +48,7 @@ int bin_search_left(int *arr, int arr_size, int target)
         else if (target < arr[middle])
         {
             right = middle - 1;
-        }   
+        }
         else if (target > arr[middle])
         {
             left = middle + 1;
@@ -89,4 +89,27 @@ int bin_search_right(int *arr, int arr_size, int target)
         return FALSE;
     }
     return TRUE;
+}
+
+// Open Side Binary Search
+// (left,right)
+int bin_search_open(int *arr, int arr_size, int target)
+{
+    int left = -1;
+    int right = arr_size;
+    int middle;
+    while (left + 1 < right)
+    {
+        middle = left + (right - left) / 2;
+        if (target < arr[middle])
+        {
+            right = middle;
+        }
+        else if (target > arr[middle])
+        {
+            left = middle;
+        }
+    }
+
+    return right;
 }
