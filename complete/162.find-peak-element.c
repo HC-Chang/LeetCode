@@ -8,14 +8,16 @@
 // Solution 2: Binary Search
 int binary_search(int *nums, int left, int right)
 {
-    if (left == right)
-        return left;
-
-    int mid = left + (right - left) / 2;
-    if (nums[mid] > nums[mid + 1])
-        return binary_search(nums, left, mid);
-    else
-        return binary_search(nums, mid + 1, right);
+    int mid;
+    while (left < right)
+    {
+        mid = left + (right - left) / 2;
+        if (nums[mid] > nums[mid + 1])
+            right = mid;
+        else
+            left = mid + 1;
+    }
+    return left;
 }
 
 int findPeakElement(int *nums, int numsSize)
