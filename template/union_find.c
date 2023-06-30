@@ -41,6 +41,7 @@ void union_p_q(int p, int q, UNION *u)
     u->count--;
 }
 
+// find father
 int find(int x, UNION *u)
 {
     while (u->parent[x] != x)
@@ -49,13 +50,6 @@ int find(int x, UNION *u)
         x = u->parent[x];
     }
     return x;
-}
-
-int find_father(int x, UNION *u)
-{
-    if (u->parent[x] != x)
-        u->parent[x] = find_father(u->parent[x], u);
-    return u->parent[x];
 }
 
 bool is_connected(int p, int q, UNION *u)
