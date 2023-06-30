@@ -12,13 +12,13 @@ typedef struct
     unsigned int *size;
 } UNION;
 
-UNION *union_find_init(int col)
+UNION *union_find_init(int n)
 {
     UNION *u = malloc(sizeof(UNION));
-    u->count = col;
-    u->parent = malloc(col * sizeof(int));
-    u->size = malloc(col * sizeof(unsigned int));
-    for (int i = 0; i < col; i++)
+    u->count = n;
+    u->parent = malloc(n * sizeof(int));
+    u->size = malloc(n * sizeof(unsigned int));
+    for (int i = 0; i < n; i++)
     {
         u->parent[i] = i;
         u->size[i] = 1;
