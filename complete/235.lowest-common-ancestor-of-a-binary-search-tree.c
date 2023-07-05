@@ -13,25 +13,13 @@
  *     struct TreeNode *right;
  * };
  */
-struct TreeNode *lca(struct TreeNode *root, struct TreeNode *p, struct TreeNode *q)
-{
-    if (!root)
-        return NULL;
-
-    if (root->val < p->val)
-        return lca(root->right, p, q);
-    else if (root->val > q->val)
-        return lca(root->left, p, q);
-    else
-        return root;
-}
-
 struct TreeNode *lowestCommonAncestor(struct TreeNode *root, struct TreeNode *p, struct TreeNode *q)
 {
-    if (q->val > p->val)
-        return lca(root, p, q);
-    else
-        return lca(root, q, p);
+    if (root->val > p->val && root->val > q->val)
+        return lowestCommonAncestor(root->left, p, q);
+    if (root->val < p->val && root->val < q->val)
+        return lowestCommonAncestor(root->right, p, q);
+    return root;
 }
 // @lc code=end
 // 假設 p值 < q值
