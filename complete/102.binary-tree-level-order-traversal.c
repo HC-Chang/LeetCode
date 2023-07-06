@@ -64,3 +64,5 @@ int **levelOrder(struct TreeNode *root, int *returnSize, int **returnColumnSizes
 }
 
 // @lc code=end
+
+// Note: queue

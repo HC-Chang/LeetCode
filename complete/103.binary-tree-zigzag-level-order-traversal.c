@@ -80,3 +80,5 @@ int **zigzagLevelOrder(struct TreeNode *root, int *returnSize, int **returnColum
     return r;
 }
 // @lc code=end
+
+// Note: queue
