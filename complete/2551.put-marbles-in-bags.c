@@ -18,10 +18,7 @@ long long putMarbles(int *weights, int weightsSize, int k)
 
     long long r = 0;
     for (int i = 0; i < k - 1; i++)
-    {
-        r += arr[weightsSize - 2 - i];
-        r -= arr[i];
-    }
+        r += arr[weightsSize - 2 - i] - arr[i];
 
     free(arr);
     return r;
