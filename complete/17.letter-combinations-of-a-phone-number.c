@@ -53,5 +53,3 @@ char **letterCombinations(char *digits, int *returnSize)
 // @lc code=end
 
 // Note: backtracking
-
-// FIXME index / str_index
