@@ -47,6 +47,8 @@ char **letterCombinations(char *digits, int *returnSize)
     char **arr = malloc(sizeof(char *) * num);
     char *str = malloc(sizeof(char *) * digits_size);
     backtrack(0, digits_size, tmp_str, str, returnSize, arr);
+
+    arr = realloc(arr, *returnSize * sizeof(char *));
     free(str);
     return arr;
 }
