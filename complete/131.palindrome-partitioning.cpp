@@ -38,4 +38,4 @@ public:
 
 // Official Solution
 
-// DFS + DP
+// Note: backtracking (DFS + DP)
