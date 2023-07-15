@@ -28,7 +28,7 @@ void push_arrs(int *arr_index, int *arr, int *arrs_index, int **arrs)
     arrs[(*arrs_index)++] = tmp;
 }
 
-void dfs(int i, int k, int *arr_index, int *arr, int *arrs_index, int *arrs)
+void dfs(int i, int k, int *arr_index, int *arr, int *arrs_index, int **arrs)
 {
     if (*arr_index == k)
     {
