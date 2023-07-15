@@ -20,9 +20,9 @@ int maxValue(int **events, int eventsSize, int *eventsColSize, int k)
     for (int i = 1; i < eventsSize + 1; i++)
         arrs[i] = events[i - 1];
 
-    long long **f = malloc((eventsSize + 1) * sizeof(long long *));
+    long long **dp = malloc((eventsSize + 1) * sizeof(long long *));
     for (int i = 0; i < eventsSize + 1; i++)
-        f[i] = calloc(k + 1, sizeof(long long));
+        dp[i] = calloc(k + 1, sizeof(long long));
 
     int l, r, mid;
     for (int i = 1; i <= eventsSize; i++)
@@ -38,18 +38,20 @@ int maxValue(int **events, int eventsSize, int *eventsColSize, int k)
                 l = mid + 1;
         }
 
-        f[i][0] = 0;
+        dp[i][0] = 0;
         for (int j = 1; j <= k; j++)
-            f[i][j] = fmax(f[i - 1][j], f[l][j - 1] + arrs[i][2]);
+            dp[i][j] = fmax(dp[i - 1][j], dp[l][j - 1] + arrs[i][2]);
     }
 
-    int ret = f[eventsSize][k];
+    int ret = dp[eventsSize][k];
     free(arrs[0]);
     free(arrs);
     for (int i = 0; i < eventsSize + 1; i++)
-        free(f[i]);
-    free(f);
+        free(dp[i]);
+    free(dp);
 
     return ret;
 }
 // @lc code=end
+
+// Note: sorting + binary search + DP
