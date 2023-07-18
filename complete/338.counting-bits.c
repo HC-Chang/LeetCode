@@ -8,26 +8,20 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-
-// Solution 2: 
+// Solution 3:
 int *countBits(int n, int *returnSize)
 {
     int *r = calloc(n + 1, sizeof(int));
     *returnSize = n + 1;
-
-    int num;
-    for (int i = 0; i <= n; i++)
-    {
-        num = i;
-        while (num)
-        {
-            r[i]++;
-            num &= (num - 1);
-        }
-    }
+    if (n == 0)
+        return r;
+    r[1] = 1;
+    for (int i = 2; i < n + 1; i++)
+        r[i] = r[(int)(i / 2)] + r[(int)(i % 2)];
 
     return r;
 }
+
 // @lc code=end
 
 // Solution 1:
@@ -48,6 +42,26 @@ int *countBits(int n, int *returnSize)
 //     }
 //     for (int i = 2; i < n + 1; i++)
 //         r[(*returnSize)++] = r[i / 2] + r[i % 2];
+
+//     return r;
+// }
+
+// // Solution 2:
+// int *countBits(int n, int *returnSize)
+// {
+//     int *r = calloc(n + 1, sizeof(int));
+//     *returnSize = n + 1;
+
+//     int num;
+//     for (int i = 0; i <= n; i++)
+//     {
+//         num = i;
+//         while (num)
+//         {
+//             r[i]++;
+//             num &= (num - 1);
+//         }
+//     }
 
 //     return r;
 // }
