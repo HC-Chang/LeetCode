@@ -5,29 +5,29 @@
  */
 
 // @lc code=start
-double myPow(double x, int n)
-{
-    if (n == 0 || x == 1.0)
-        return 1.0;
-    else if (n == INT_MAX)
-        return (x == 1) ? 1 : (x == -1) ? -1
-                                        : 0;
-    else if (n == INT_MIN)
-        return (x == 1 || x == -1) ? 1 : 0;
+double myPow(double x, int n) {
+    if (n == 0)
+        return 1.0;l
 
-    if (n < 0)
-    {
+    if (n == INT_MIN) {
         x = 1.0 / x;
-        n = -n;
+        n = -(n + 1); 
+        
+        return x * myPow(x, n);
     }
 
-    if (n % 2 == 0)
-    {
-        double half = myPow(x, n / 2);
-        return half * half;
+    if (n < 0) {
+        x = 1.0 / x;
+        n = -n;	
     }
-    else
-        return x * myPow(x, n - 1);
+
+    double half = myPow(x, n / 2);
+    double result = half * half;
+
+    if (n % 2 == 1)
+        result *= x;
+
+    return result;
 }
 // @lc code=end
 
