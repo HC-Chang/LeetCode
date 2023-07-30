@@ -30,7 +30,7 @@ char ***suggestedProducts(char **products, int productsSize, char *searchWord, i
     int cnt;
     for (int i = 0; i < len; i++)
     {
-        char **lists = (char **)malloc(sizeof(char *) * 3);
+        char **lists = malloc(sizeof(char *) * 3);
         ans[i] = lists;
         cnt = 0;
         for (int j = startIndex; j < productsSize; j++)
