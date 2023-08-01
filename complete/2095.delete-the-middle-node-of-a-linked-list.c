@@ -12,36 +12,26 @@
  *     struct ListNode *next;
  * };
  */
-
 struct ListNode *deleteMiddle(struct ListNode *head)
 {
     if (!head->next)
         return NULL;
-
     struct ListNode *fast = head;
     struct ListNode *slow = head;
+    struct ListNode *prev_slow;
 
     while (fast->next)
     {
-        fast = fast->next;
+        prev_slow = slow;
         slow = slow->next;
+        fast = fast->next;
         if (fast->next)
             fast = fast->next;
     }
-    
-    if (slow->next)
-    {
-        fast = slow->next;
-        slow->val = slow->next->val;
-        if (slow->next->next)
-            slow->next = slow->next->next;
-        else
-            slow->next = NULL;
-        free(fast);
-    }
-    else
-        head->next = NULL;
-
+    prev_slow->next = slow->next;
+    free(slow);
     return head;
 }
 // @lc code=end
+
+// Note: Linked List
