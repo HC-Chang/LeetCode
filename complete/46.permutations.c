@@ -64,6 +64,8 @@ int **permute(int *nums, int numsSize, int *returnSize, int **returnColumnSizes)
     for (int i = 0; i < *returnSize; i++)
         returnColumnSizes[0][i] = numsSize;
 
+    free(visited);
+    free(arr);
     return arrs;
 }
 // @lc code=end
