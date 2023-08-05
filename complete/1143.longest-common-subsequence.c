@@ -5,8 +5,6 @@
  */
 
 // @lc code=start
-#define max(a, b) a > b ? a : b
-
 int longestCommonSubsequence(char *text1, char *text2)
 {
     int len1 = strlen(text1);
@@ -23,7 +21,7 @@ int longestCommonSubsequence(char *text1, char *text2)
             if (text1[i - 1] == text2[j - 1])
                 dp[i][j] = dp[i - 1][j - 1] + 1;
             else
-                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+                dp[i][j] = fmax(dp[i - 1][j], dp[i][j - 1]);
         }
     }
     int r = dp[len1][len2];
