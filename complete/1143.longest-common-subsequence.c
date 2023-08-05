@@ -36,6 +36,8 @@ int longestCommonSubsequence(char *text1, char *text2)
 }
 // @lc code=end
 
+// Note: Longest Common Subsequence
+
 // Solution 1:
 // int longestCommonSubsequence(char *text1, char *text2)
 // {

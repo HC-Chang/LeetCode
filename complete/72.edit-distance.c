@@ -5,7 +5,6 @@
  */
 
 // @lc code=start
-int min(int a, int b) { return a < b ? a : b; }
 int minDistance(char *word1, char *word2)
 {
     int len_1 = strlen(word1);
@@ -29,7 +28,7 @@ int minDistance(char *word1, char *word2)
             if (word1[i - 1] == word2[j - 1])
                 dp[j] = topleft;
             else
-                dp[j] = min(min(dp[j - 1], top), topleft) + 1;
+                dp[j] = fmin(fmin(dp[j - 1], top), topleft) + 1;
 
             topleft = top;
         }
@@ -40,3 +39,5 @@ int minDistance(char *word1, char *word2)
     return r;
 }
 // @lc code=end
+
+// Note: Longest Common Subsequence
