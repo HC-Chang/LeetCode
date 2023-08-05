@@ -5,6 +5,7 @@
  */
 
 // @lc code=start
+// Solution 1: DP
 int lengthOfLIS(int *nums, int numsSize)
 {
     int dp_max = 1;
@@ -25,3 +26,5 @@ int lengthOfLIS(int *nums, int numsSize)
     return dp_max;
 }
 // @lc code=end
+
+// Note: DP / greedy + B-Search
