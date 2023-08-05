@@ -26,6 +26,11 @@ int longestCommonSubsequence(char *text1, char *text2)
                 dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
         }
     }
-    return dp[len1][len2];
+    int r = dp[len1][len2];
+    for (int i = 0; i <= len1; i++)
+        free(dp[i]);
+    free(dp);
+
+    return r;
 }
 // @lc code=end
