@@ -113,6 +113,8 @@ int findKthLargest(int *nums, int numsSize, int k)
 }
 // @lc code=end
 
+// Note: heap
+
 // Solution 1: sort
 // int sort(void *a, void *b) { return *(int *)b - *(int *)a; }
 
