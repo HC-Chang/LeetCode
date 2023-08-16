@@ -18,61 +18,67 @@ typedef struct
 
 MonotonicQueue *init_monotonic_queue(int capacity)
 {
-    MonotonicQueue *Q = malloc(sizeof(MonotonicQueue));
-    Q->capacity = capacity;
-    Q->arr = malloc(capacity * sizeof(int));
-    Q->head = 0;
-    Q->tail = -1;
-    return Q;
+    MonotonicQueue *obj = malloc(sizeof(MonotonicQueue));
+    obj->capacity = capacity;
+    obj->arr = malloc(capacity * sizeof(int));
+    obj->head = 0;
+    obj->tail = -1;
+    return obj;
 }
 
-int is_monotonic_queue_empty(MonotonicQueue *Q)
+int is_empty_monotonic_queue(MonotonicQueue *obj)
 {
-    return Q->tail < Q->head;
+    return obj->tail < obj->head;
 }
 
-void push_back(MonotonicQueue *Q, int value)
+void push_monotonic_queue(int val, MonotonicQueue *obj)
 {
-    while (!is_monotonic_queue_empty(Q) && value > Q->arr[Q->tail])
-    {
-        Q->tail--;
-    }
-    Q->tail++;
-    Q->arr[Q->tail] = value;
+    while (!is_empty_monotonic_queue(obj) && val > obj->arr[obj->tail])
+        obj->tail--;
+
+    obj->tail++;
+    obj->arr[obj->tail] = val;
 }
 
-int get_front(MonotonicQueue *Q)
+int top_monotonic_queue(MonotonicQueue *obj)
 {
-    return Q->arr[Q->head];
+    return obj->arr[obj->head];
 }
 
-void pop_front(MonotonicQueue *Q)
+void pop_monotonic_queue(MonotonicQueue *obj)
 {
-    Q->head++;
+    obj->head++;
+}
+
+void free_monotonic_queue(MonotonicQueue *obj)
+{
+    free(obj->arr);
+    free(obj);
 }
 
 int *maxSlidingWindow(int *nums, int numsSize, int k, int *returnSize)
 {
-    int *ans = (int *)malloc(sizeof(int) * (numsSize - k + 1));
+    int *ans = malloc((numsSize - k + 1) * sizeof(int));
     *returnSize = 0;
 
-    MonotonicQueue *Q = init_monotonic_queue(numsSize);
+    MonotonicQueue *q = init_monotonic_queue(numsSize);
 
     for (int i = 0; i < numsSize; i++)
     {
-        push_back(Q, nums[i]);
+        push_monotonic_queue(nums[i], q);
 
         if (i >= k - 1)
         {
-            ans[(*returnSize)++] = get_front(Q);
+            ans[(*returnSize)++] = top_monotonic_queue(q);
 
-            if (get_front(Q) == nums[i - k + 1])
-            {
-                pop_front(Q);
-            }
+            if (top_monotonic_queue(q) == nums[i - k + 1])
+                pop_monotonic_queue(q);
         }
     }
 
+    free_monotonic_queue(q);
     return ans;
 }
 // @lc code=end
+
+// Note: Heap . Monotonic Queue
