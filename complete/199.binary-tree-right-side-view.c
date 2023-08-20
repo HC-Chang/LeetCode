@@ -20,11 +20,9 @@
 void recursive(struct TreeNode *root, int *r, int *r_size, int new)
 {
     if (root == NULL)
-    {
         return;
-    }
-    r[new] = root->val;
-    new ++;
+
+    r[new++] = root->val;
     *r_size = new > *r_size ? new : *r_size;
 
     recursive(root->left, r, r_size, new);
@@ -33,12 +31,10 @@ void recursive(struct TreeNode *root, int *r, int *r_size, int new)
 
 int *rightSideView(struct TreeNode *root, int *returnSize)
 {
-    int buffer_size = 1000;
+    int buffer_size = 100;
     int *r = calloc(buffer_size, sizeof(int));
-    int r_size = 0;
-    recursive(root, r, &r_size, 0);
-
-    *returnSize = r_size;
+    *returnSize = 0;
+    recursive(root, r, returnSize, 0);
 
     return r;
 }
