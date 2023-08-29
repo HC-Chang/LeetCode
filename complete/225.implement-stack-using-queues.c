@@ -99,3 +99,5 @@ void myStackFree(MyStack *obj)
 // - pop
 // - top
 // - is_empty
+
+// Note: design

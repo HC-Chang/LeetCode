@@ -183,3 +183,95 @@ void myQueueFree(MyQueue *obj)
 // - top
 // - is_empty
 // - free (optional)
+
+
+// Note: design
+
+// Solution 1:
+// typedef struct {
+//     int arr[100];
+//     int index;
+// }STACK;
+
+// STACK *init_stack(void)
+// {
+//     STACK *obj = calloc(1, sizeof(STACK));
+//     return obj;
+// }
+// void push_stack(int val, STACK *obj)
+// {
+//     obj->arr[obj->index++] = val;
+// }
+
+// int pop_stack(STACK *obj)
+// {
+//     if(obj->index == 0)
+//         return -1;
+//     return obj->arr[--obj->index];
+// }
+
+// int top_stack(STACK *obj)
+// {
+//     if(obj->index == 0)
+//         return -1;
+//     return obj->arr[obj->index-1];
+// }
+
+// bool is_empty_stack(STACK *obj)
+// {
+//     return obj->index <= 0;
+// }
+
+// typedef struct {
+//     STACK *s1;
+//     STACK *s2;
+// } MyQueue;
+
+
+// MyQueue* myQueueCreate() {
+//     MyQueue *obj = malloc(sizeof(MyQueue));
+//     obj->s1 = init_stack();
+//     obj->s2 = init_stack();
+//     return obj;
+// }
+
+// void myQueuePush(MyQueue* obj, int x) {
+//     push_stack(x, obj->s1);
+// }
+
+// bool myQueueEmpty(MyQueue* obj) {
+//     if (is_empty_stack(obj->s1) && is_empty_stack(obj->s2))
+// 		return true;
+// 	return false;
+// }
+
+// void transfer_stack(STACK *obj1, STACK *obj2)
+// {
+//     while(!is_empty_stack(obj1))
+//         push_stack( pop_stack(obj1), obj2);
+// }
+
+// int myQueuePop(MyQueue* obj) {
+//     if(myQueueEmpty(obj))
+//         return -1;
+//     if(is_empty_stack(obj->s2))
+//         transfer_stack(obj->s1, obj->s2);
+//     int res = pop_stack(obj->s2);
+//     if(is_empty_stack(obj->s2))
+//         transfer_stack(obj->s1, obj->s2);
+//     return res;
+// }
+
+// int myQueuePeek(MyQueue* obj) {
+//     if(myQueueEmpty(obj))
+//         return -1;
+//     if(is_empty_stack(obj->s2))
+//         transfer_stack(obj->s1, obj->s2);
+//     return top_stack(obj->s2);
+// }
+
+// void myQueueFree(MyQueue* obj) {
+//     free(obj->s1);
+//     free(obj->s2);
+//     free(obj);
+// }
