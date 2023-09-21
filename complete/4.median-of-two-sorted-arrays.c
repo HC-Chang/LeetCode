@@ -5,10 +5,6 @@
  */
 
 // @lc code=start
-
-int max(int a, int b) { return a > b ? a : b; };
-int min(int a, int b) { return a < b ? a : b; };
-
 double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Size)
 {
     if (nums1Size > nums2Size)
@@ -20,7 +16,7 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
     int right = nums1Size;
     int m1;
     int m2;
-    
+
     while (left < right)
     {
         m1 = left + (right - left) / 2;
@@ -34,14 +30,14 @@ double findMedianSortedArrays(int *nums1, int nums1Size, int *nums2, int nums2Si
     m1 = left;
     m2 = k - left;
 
-    int c1 = max(m1 <= 0 ? INT_MIN : nums1[m1 - 1],
-                 m2 <= 0 ? INT_MIN : nums2[m2 - 1]);
+    int c1 = fmax(m1 <= 0 ? INT_MIN : nums1[m1 - 1],
+                  m2 <= 0 ? INT_MIN : nums2[m2 - 1]);
 
     if ((nums1Size + nums2Size) % 2 == 1)
         return c1;
 
-    int c2 = min(m1 >= nums1Size ? INT_MAX : nums1[m1],
-                 m2 >= nums2Size ? INT_MAX : nums2[m2]);
+    int c2 = fmin(m1 >= nums1Size ? INT_MAX : nums1[m1],
+                  m2 >= nums2Size ? INT_MAX : nums2[m2]);
 
     return (c1 + c2) * 0.5;
 }
