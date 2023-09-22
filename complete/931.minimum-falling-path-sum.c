@@ -5,42 +5,28 @@
  */
 
 // @lc code=start
-int min_matrix(int **matrix, int i, int j, int size)
+int last_min(int i, int j, int** matrix, int matrixSize, int* matrixColSize)
 {
-    if (i - 1 < 0)
-        return matrix[i][j];
-    int min = matrix[i - 1][j];
-    if (j - 1 >= 0)
-        min = min < matrix[i - 1][j - 1] ? min : matrix[i - 1][j - 1];
-    if (j + 1 < size)
-        min = min < matrix[i - 1][j + 1] ? min : matrix[i - 1][j + 1];
+    int min = matrix[i-1][j];
+    if(j>=1)
+        min = fmin(min, matrix[i-1][j-1]);
+    if(j<matrixColSize[i]-1)
+        min = fmin(min, matrix[i-1][j+1]);
     return min;
 }
-int minFallingPathSum(int **matrix, int matrixSize, int *matrixColSize)
+
+int sort(void *a, void *b)
 {
-    int **dp = calloc(matrixSize, sizeof(int *));
-    for (int i = 0; i < matrixSize; i++)
-        dp[i] = calloc(matrixSize, sizeof(int));
-    for (int i = 0; i < matrixSize; i++)
-        dp[0][i] = matrix[0][i];
+    return *(int*)a - *(int*)b;
+}
 
-    for (int i = 1; i < matrixSize; i++)
+int minFallingPathSum(int** matrix, int matrixSize, int* matrixColSize){
+    for(int i = 1; i<matrixSize; i++)
     {
-        for (int j = 0; j < matrixSize; j++)
-            dp[i][j] = matrix[i][j] + min_matrix(dp, i, j, matrixSize);
+        for(int j=0; j<matrixColSize[i]; j++)
+            matrix[i][j] += last_min(i,j, matrix, matrixSize, matrixColSize);
     }
-
-    int min = dp[matrixSize - 1][0];
-    for (int i = 1; i < matrixSize; i++)
-    {
-        if (dp[matrixSize - 1][i] < min)
-            min = dp[matrixSize - 1][i];
-    }
-
-    for (int i = 0; i < matrixSize; i++)
-        free(dp[i]);
-    free(dp);
-    
-    return min;
+    qsort(matrix[matrixSize-1], matrixColSize[matrixSize-1], sizeof(int), sort);
+    return matrix[matrixSize-1][0];
 }
 // @lc code=end
