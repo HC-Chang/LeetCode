@@ -9,7 +9,7 @@ int countPalindromicSubsequence(char *s)
 {
     int n = strlen(s);
     int count = 0;
-    int charset[26];
+    bool hash[26];
     for (char ch = 'a'; ch <= 'z'; ++ch)
     {
         int l = 0, r = n - 1;
@@ -23,12 +23,14 @@ int countPalindromicSubsequence(char *s)
         if (r - l < 2)
             continue;
 
-        memset(charset, 0, sizeof(charset));
+        memset(hash, 0, sizeof(hash));
         for (int k = l + 1; k < r; ++k)
         {
-            ++charset[s[k] - 'a'];
-            if (charset[s[k] - 'a'] == 1)
+            if (hash[s[k] - 'a'] == false)
+            {
+                hash[s[k] - 'a'] = true;
                 count++;
+            }
         }
     }
     return count;
