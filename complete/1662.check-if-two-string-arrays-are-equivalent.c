@@ -37,8 +37,8 @@ bool arrayStringsAreEqual(char **word1, int word1Size, char **word2, int word2Si
 
     // Solution 2:
     
-    // char s1[1000] = "";
-    // char s2[1000] = "";
+    // char s1[1001] = "";
+    // char s2[1001] = "";
     // int i;
     // for (i = 0; i < word1Size; i++)
     // {
