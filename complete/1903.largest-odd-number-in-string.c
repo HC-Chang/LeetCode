@@ -8,15 +8,14 @@
 char *largestOddNumber(char *num)
 {
     int n = strlen(num);
-    char *ans = calloc(n + 1, sizeof(char));
     for (int i = n - 1; i >= 0; i--)
     {
         if ((num[i] - '0') % 2 == 1)
         {
-            strncpy(ans, num, i + 1);
-            break;
+            num[i + 1] = 0;
+            return num;
         }
     }
-    return ans;
+    return "";
 }
 // @lc code=end
