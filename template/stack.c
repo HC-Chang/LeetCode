@@ -10,15 +10,16 @@
 
 typedef struct
 {
-    int capacity ;
+    int capacity;
     int index;
     char *arr_val;
 } STACK;
 
 STACK *init_stack(int n)
 {
-    STACK *obj;
+    STACK *obj = malloc(sizeof(STACK));
     obj->capacity = n;
+    obj->index = 0;
     obj->arr_val = calloc(n, sizeof(char));
     return obj;
 }
