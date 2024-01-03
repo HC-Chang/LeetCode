@@ -11,28 +11,24 @@ public:
     int numberOfBeams(vector<string> &bank)
     {
         int n = bank.size();
-        vector<int> size(n);
+        int cnt = 0;
+        int cur = 0;
+        int pre = 0;
         for (int i = 0; i < n; i++)
         {
+            cur = 0;
             for (auto c : bank[i])
             {
                 if (c == '1')
-                    size[i]++;
+                    cur++;
             }
-        }
-        int cnt = 0;
-        int j;
-        for (int i = 0; i < n; i++)
-        {
-            while (i < n - 1 && size[i] == 0)
-                i++;
-            j = i + 1;
-            while (j < n - 1 && size[j] == 0)
-                j++;
-            if (i >= n || j >= n)
-                break;
-            cnt += size[i] * size[j];
-            i = j - 1;
+            if (pre == 0)
+                pre = cur;
+            else if (cur != 0)
+            {
+                cnt += pre * cur;
+                pre = cur;
+            }
         }
 
         return cnt;
