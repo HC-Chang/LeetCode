@@ -5,6 +5,37 @@
  */
 
 // @lc code=start
+// Solution 2: DP
+int lengthOfLIS(int *nums, int numsSize)
+{
+    int arr[numsSize];
+    memset(arr, 0, sizeof(arr));
+    int idx = 0;
+    arr[idx++] = nums[0];
+
+    for (int i = 1; i < numsSize; i++)
+    {
+        if (nums[i] > arr[idx - 1])
+            arr[idx++] = nums[i];
+        else
+        {
+            for (int j = 0; j < idx; j++)
+            {
+                if (nums[i] <= arr[j])
+                {
+                    arr[j] = nums[i];
+                    break;
+                }
+            }
+        }
+    }
+
+    return idx;
+}
+// @lc code=end
+
+// Note: DP / greedy + B-Search
+
 // Solution 1: DP
 int lengthOfLIS(int *nums, int numsSize)
 {
@@ -25,6 +56,3 @@ int lengthOfLIS(int *nums, int numsSize)
     free(dp);
     return dp_max;
 }
-// @lc code=end
-
-// Note: DP / greedy + B-Search
