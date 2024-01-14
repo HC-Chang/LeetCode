@@ -36,3 +36,5 @@ bool closeStrings(char *word1, char *word2)
     return true;
 }
 // @lc code=end
+
+// Note: hash map + sort
