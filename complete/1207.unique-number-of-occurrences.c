@@ -24,6 +24,8 @@ bool uniqueOccurrences(int *arr, int arrSize)
 }
 // @lc code=end
 
+// Note: hash map
+
 // // Solution 1:
 // #define SIZE 1000
 // int map[SIZE * 2 + 1] = {0};
