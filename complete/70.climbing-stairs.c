@@ -22,3 +22,5 @@ int climbStairs(int n)
     return current;
 }
 // @lc code=end
+
+// Note: DP
