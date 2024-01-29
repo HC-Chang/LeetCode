@@ -10,7 +10,7 @@ class MyQueue
 public:
     stack<int> s1;
     stack<int> s2;
-    void queue_to_stack()
+    void s1_to_s2()
     {
         while (!s1.empty())
         {
@@ -34,19 +34,19 @@ public:
         int result = -1;
 
         if (s2.empty())
-            queue_to_stack();
+            s1_to_s2();
 
         result = s2.top();
         s2.pop();
         if (s2.empty())
-            queue_to_stack();
+            s1_to_s2();
         return result;
     }
 
     int peek()
     {
         if (s2.empty())
-            queue_to_stack();
+            s1_to_s2();
         return s2.top();
     }
 
