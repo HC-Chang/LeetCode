@@ -22,7 +22,6 @@ public:
             {
                 int targetIdx = s.top();
                 s.pop();
-                int target = temperatures[targetIdx];
                 ret[targetIdx] = i - targetIdx;
                 i--;
             }

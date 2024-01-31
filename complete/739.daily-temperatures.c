@@ -84,7 +84,6 @@ int *dailyTemperatures(int *temperatures, int temperaturesSize, int *returnSize)
         {
             int targetIdx = top_stack(obj);
             pop_stack(obj);
-            int target = temperatures[targetIdx];
             ret[targetIdx] = i - targetIdx;
             i--;
         }
