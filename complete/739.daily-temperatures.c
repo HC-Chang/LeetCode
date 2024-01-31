@@ -96,6 +96,8 @@ int *dailyTemperatures(int *temperatures, int temperaturesSize, int *returnSize)
 
 // @lc code=end
 
+// Note: stack
+
 // Time Limit Exceeded
 
 // int* dailyTemperatures(int* temperatures, int temperaturesSize, int* returnSize){
