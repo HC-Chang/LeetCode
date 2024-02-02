@@ -128,6 +128,8 @@
 
 - Eulerian Circuit: 332
 
+- Enumeration: 2306.1601.1566.1291
+
 ---
 
 ## Todo:
