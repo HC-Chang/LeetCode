@@ -5,7 +5,6 @@
  */
 
 // @lc code=start
-
 char *minWindow(char *s, char *t)
 {
     int s_len = strlen(s);
@@ -24,11 +23,8 @@ char *minWindow(char *s, char *t)
     int t_valids[58] = {0};
 
     for (int i = 0; i < t_len; i++)
-        t_valids[t[i] - 'A']++;
-
-    for (int i = 0; i < 58; i++)
     {
-        if (t_valids[i] != 0)
+        if(++t_valids[t[i] - 'A'] == 1)
             t_valid_count++;
     }
 
@@ -50,7 +46,7 @@ char *minWindow(char *s, char *t)
             {
                 start = left;
                 r_len = right - left;
-                printf("%i %i\n", start, r_len);
+                // printf("%i %i\n", start, r_len);
             }
             d = s[left];
             left++;
@@ -72,3 +68,5 @@ char *minWindow(char *s, char *t)
     return r;
 }
 // @lc code=end
+
+// Note: hash table + sliding window
