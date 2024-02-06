@@ -113,3 +113,5 @@ char ***groupAnagrams(char **strs, int strsSize, int *returnSize, int **returnCo
     return groups;
 }
 // @lc code=end
+
+// Note: sorting + hash table
