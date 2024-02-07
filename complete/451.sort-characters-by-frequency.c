@@ -7,47 +7,38 @@
 // @lc code=start
 typedef struct
 {
-    int count;
     char c;
+    int cnt;
 } DATA;
 
-int compare(const void *a, const void *b)
-{
-    DATA *n1 = (DATA *)a;
-    DATA *n2 = (DATA *)b;
-
-    if (n1->count == n2->count)
-        return n2->c - n1->c;
-
-    return n2->count - n1->count;
-}
-
+int sort(void *a, void *b) { return (*(DATA *)b).cnt - (*(DATA *)a).cnt; };
+// '0' ~ 'z'
+// 48 ~ 122
+#define SIZE 75
 char *frequencySort(char *s)
 {
-    int len = strlen(s);
-    if (!len)
-        return NULL;
-        
-    // '0' ~ 'z'
-    // 48 ~ 122
-    DATA *data = calloc(75, sizeof(DATA));
-    for (int i = 0; i < 75; i++)
-        data[i].c = i + '0';
-
-    for (int i = 0; i < len; i++)
-        ++data[s[i] - '0'].count;
-
-    qsort(data, 75, sizeof(DATA), compare);
-
-    char *ss = calloc(len + 1, sizeof(char));
-    int ss_index = 0;
-    for (int i = 0; i < 75; i++)
+    DATA d[SIZE];
+    for (int i = 0; i < SIZE; i++)
     {
-        if (data[i].count == 0)
-            continue;
-        for (int j = 0; j < data[i].count; j++)
-            ss[ss_index++] = data[i].c;
+        d[i].c = '0' + i;
+        d[i].cnt = 0;
     }
-    return ss;
+    int n = strlen(s);
+    for (int i = 0; i < n; i++)
+        ++(d[s[i] - '0'].cnt);
+    qsort(&d, SIZE, sizeof(DATA), sort);
+    int idx = 0;
+    int cnt;
+    for (int i = 0; i < SIZE; i++)
+    {
+        cnt = d[i].cnt;
+        if (cnt == 0)
+            break;
+        for (int j = 0; j < cnt; j++)
+            s[idx++] = d[i].c;
+    }
+    return s;
 }
 // @lc code=end
+
+// Note: hash table + counting + sorting
