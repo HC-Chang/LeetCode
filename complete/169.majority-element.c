@@ -5,28 +5,63 @@
  */
 
 // @lc code=start
-int majorityElement(int *nums, int numsSize)
+typedef struct
 {
-    int *map = calloc(100001, sizeof(int));
-    int max_count = 1;
-    int max_number = nums[0];
-    map[nums[0] + 5000] = 1;
-    for (int i = 1; i < numsSize; i++)
+    int cnt;
+    int idx;
+    UT_hash_handle hh;
+} HASH;
+
+HASH *hash = NULL;
+
+void add_hash(int idx, int *max_val, int *max_cnt, bool *over_half, int total_cnt)
+{
+    HASH *tmp;
+    HASH_FIND_INT(hash, &idx, tmp);
+    if (tmp == NULL)
     {
-        map[nums[i] + 5000] += 1;
-        if (map[nums[i] + 5000] > max_count)
+        tmp = malloc(sizeof(HASH));
+        tmp->idx = idx;
+        tmp->cnt = 1;
+        HASH_ADD_INT(hash, idx, tmp);
+    }
+    else
+    {
+        if (++tmp->cnt > *max_cnt)
         {
-            max_count = map[nums[i] + 5000];
-            max_number = nums[i];
-        }
-        if (max_count > (numsSize / 2 + 1))
-        {
-            free(map);
-            return max_number;
+            *max_cnt = tmp->cnt;
+            *max_val = idx;
+            if (*max_cnt > (total_cnt / 2 + 1))
+                *over_half = true;
         }
     }
-    
-    free(map);
-    return max_number;
+}
+
+void free_hash()
+{
+    HASH *cur, *tmp;
+    HASH_ITER(hh, hash, cur, tmp)
+    {
+        HASH_DEL(hash, cur);
+        free(cur);
+    }
+}
+
+int majorityElement(int *nums, int numsSize)
+{
+    int max_val = nums[0];
+    int max_cnt = 1;
+    bool over_half = false;
+    for (int i = 0; i < numsSize; i++)
+    {
+        add_hash(nums[i], &max_val, &max_cnt, &over_half, numsSize);
+        if (over_half)
+            break;
+    }
+
+    free_hash();
+    return max_val;
 }
 // @lc code=end
+
+// Note: hash table
