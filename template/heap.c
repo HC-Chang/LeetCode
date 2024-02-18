@@ -23,6 +23,16 @@ void free_heap(HEAP *obj)
     free(obj);
 }
 
+int top_heap(HEAP *obj)
+{
+    return obj->arr[0];
+}
+
+bool is_empty_heap(HEAP *obj)
+{
+    return obj->size == 0;
+}
+
 // min-heap
 void push_min_heap(int val, HEAP *obj)
 {
