@@ -1,5 +1,5 @@
 // Heap
-// Similar Questions: 1845 (min)
+// Similar Questions: 1845 (min-heap). 1642(max-heap)
 
 typedef struct
 {
