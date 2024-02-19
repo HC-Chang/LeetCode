@@ -1,13 +1,13 @@
-// Heap
+// Heap (Priority Queue)
 // Similar Questions: 1845 (min-heap). 1642(max-heap)
 
+// heap
 typedef struct
 {
     int size;
     int *arr;
 } HEAP;
 
-// heap
 HEAP *init_heap(int n)
 {
     HEAP *obj = malloc(sizeof(HEAP));
