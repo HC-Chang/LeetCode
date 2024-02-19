@@ -5,22 +5,26 @@
  */
 
 // @lc code=start
+// Solution 2: bit manipulation
 bool isPowerOfTwo(int n)
 {
-    if (n == 1)
+    long int x = n;
+    if (n && !(n & (x - 1)))
         return true;
-    else if (n % 2 == 1 || n <= 0)
-        return false;
-    unsigned int tmp = 2;
-    while (tmp <= n)
-    {
-        if (tmp == n)
-            return true;
-        else
-            tmp *= 2;
-    }
     return false;
 }
 // @lc code=end
 
 // Note: bit manipulation
+
+// Solution 1: recursion
+// bool isPowerOfTwo(int n)
+// {
+//     if (n == 1)
+//         return true;
+//     else if (n <= 0)
+//         return false;
+//     if (n % 2 != 0)
+//         return false;
+//     return isPowerOfTwo(n / 2);
+// }
