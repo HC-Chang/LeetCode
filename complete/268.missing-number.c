@@ -5,12 +5,12 @@
  */
 
 // @lc code=start
-// Solution 2: bit manipulation
+// Solution 3: sum
 int missingNumber(int *nums, int numsSize)
 {
-    int r = numsSize;
-    for (int i = 0; i < numsSize; i++)
-        r ^= i ^ nums[i];
+    int r = numsSize*(numsSize+1)/2;
+    for(int i=0; i<numsSize; i++)
+        r-=nums[i];
     return r;
 }
 // @lc code=end
@@ -29,4 +29,13 @@ int missingNumber(int *nums, int numsSize)
 //             break;
 //     }
 //     return i;
+// }
+
+// Solution 2: bit manipulation
+// int missingNumber(int *nums, int numsSize)
+// {
+//     int r = numsSize;
+//     for (int i = 0; i < numsSize; i++)
+//         r ^= i ^ nums[i];
+//     return r;
 // }
