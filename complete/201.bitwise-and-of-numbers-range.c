@@ -39,6 +39,8 @@ int rangeBitwiseAnd(int left, int right)
 }
 // @lc code=end
 
+// Note: bit manipulation
+
 // 從最高 bit 數檢查
 // 如有一樣則相加
 // 有異則停止
