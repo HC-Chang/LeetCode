@@ -47,7 +47,7 @@ public:
                     if (dp[v] == 0)
                         dp[v] = pre[u] + w;
                     else
-                        dp[v] = fmin(dp[v], pre[u] + w);
+                        dp[v] = min(dp[v], pre[u] + w);
                 }
             }
 
