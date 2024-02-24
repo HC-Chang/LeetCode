@@ -59,6 +59,12 @@ bool is_connected(int p, int q, UNION *u)
     return root_p == root_q;
 }
 
+void union_set(int val, UNION *u)
+{
+    u->parent[val] = val;
+    u->size[val] = 1;
+}
+
 int union_count(UNION *u)
 {
     return u->count;
