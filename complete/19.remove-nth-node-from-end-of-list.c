@@ -48,3 +48,5 @@ struct ListNode *removeNthFromEnd(struct ListNode *head, int n)
     return head;
 }
 // @lc code=end
+
+// Note: linked list + two pointers
