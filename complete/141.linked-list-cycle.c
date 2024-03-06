@@ -29,3 +29,5 @@ bool hasCycle(struct ListNode *head)
     return false;
 }
 // @lc code=end
+
+// Note: linked list
