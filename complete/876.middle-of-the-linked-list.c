@@ -50,3 +50,5 @@ struct ListNode *middleNode(struct ListNode *head)
     return slow;
 }
 // @lc code=end
+
+// Note: linked list + two pointers
