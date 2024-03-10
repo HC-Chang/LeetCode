@@ -26,6 +26,8 @@ int findPeakElement(int *nums, int numsSize)
 }
 // @lc code=end
 
+// Note: binary search
+
 // Solution 1:
 // int findPeakElement(int* nums, int numsSize){
 //     int max = nums[0], max_index = 0;
