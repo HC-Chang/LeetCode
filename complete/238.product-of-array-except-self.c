@@ -53,6 +53,7 @@ int *productExceptSelf(int *nums, int numsSize, int *returnSize)
     return nums;
 }
 // @lc code=end
+
 // NOTE 考慮 0 出現的次數
 // 出現 0 次:     全部不為 0
 // 出現 1 次:     一個不為 0
