@@ -5,8 +5,6 @@
  */
 
 // @lc code=start
-int max(int a, int b) { return a > b ? a : b; }
-
 int leastInterval(char *tasks, int tasksSize, int n)
 {
     if (n == 0)
@@ -29,6 +27,6 @@ int leastInterval(char *tasks, int tasksSize, int n)
     }
 
     int r = (max_count - 1) * (n + 1) + remain;
-    return max(r, tasksSize);
+    return fmax(r, tasksSize);
 }
 // @lc code=end
