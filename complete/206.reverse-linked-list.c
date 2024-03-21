@@ -29,6 +29,8 @@ struct ListNode *reverseList(struct ListNode *head)
 }
 // @lc code=end
 
+// Note: linked list
+
 // Solution 1:
 
 // struct ListNode* reverseList(struct ListNode* head){
