@@ -31,6 +31,7 @@ bool isPalindrome(struct ListNode *head)
     return post_traverse(left);
 }
 // @lc code=end
+
 // 後序走訪至最後 node
 // 再與 head node 做比較
 // l1 == r1, l2 == r2, ...
