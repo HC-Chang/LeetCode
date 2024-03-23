@@ -60,3 +60,5 @@ void reorderList(struct ListNode *head)
     }
 }
 // @lc code=end
+
+// Note: linked list + two pointers
