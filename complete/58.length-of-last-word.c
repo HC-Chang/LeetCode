@@ -5,26 +5,49 @@
  */
 
 // @lc code=start
-int lengthOfLastWord(char *s)
-{
-    int count = 0;
-    int start = 0;
-    while (*s)
-    {
-        if (*s != ' ')
-        {
-            if (start == 0)
-            {
-                start = 1;
-                count = 1;
-            }
+// Solution 2:
+
+int lengthOfLastWord(char* s) {
+    if (!s)
+        return 0;
+
+    int cnt = 0;
+    if (*s++ != ' ')
+        cnt = 1;
+    while(*s) {
+        if (*s != ' ') {
+            if(*(s-1) == ' ')
+                cnt = 1;
             else
-                count++;
+                cnt++;
         }
-        else
-            start = 0;
         s++;
     }
-    return count;
+    return cnt;
 }
 // @lc code=end
+
+// Solution 1: 
+
+// int lengthOfLastWord(char *s)
+// {
+//     int count = 0;
+//     int start = 0;
+//     while (*s)
+//     {
+//         if (*s != ' ')
+//         {
+//             if (start == 0)
+//             {
+//                 start = 1;
+//                 count = 1;
+//             }
+//             else
+//                 count++;
+//         }
+//         else
+//             start = 0;
+//         s++;
+//     }
+//     return count;
+// }
