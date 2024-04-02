@@ -19,4 +19,7 @@ bool isIsomorphic(char *s, char *t)
     return true;
 }
 // @lc code=end
+
 // map size = 128 (ASCII Code)
+
+// Note: hash table
