@@ -5,11 +5,6 @@
  */
 
 // @lc code=start
-int abs(int val)
-{
-    return val >= 0 ? val : -val;
-}
-
 bool checkValidString(char *s)
 {
     if (s[0] == ')')
@@ -52,4 +47,5 @@ bool checkValidString(char *s)
     return min_count == 0;
 }
 // @lc code=end
+
 // NOTE '*' 可當左括弧、右括弧、空白
