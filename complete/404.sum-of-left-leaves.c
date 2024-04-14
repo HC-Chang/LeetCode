@@ -17,7 +17,7 @@ void traverse(int *sum, struct TreeNode *last, struct TreeNode *root)
 {
     if (!root)
         return;
-    if ((last == NULL || last->left == root) && root->left == NULL && root->right == NULL)
+    if (last->left == root && !root->left && !root->right)
         *sum += root->val;
     if (root->left)
         traverse(sum, root, root->left);
@@ -26,10 +26,10 @@ void traverse(int *sum, struct TreeNode *last, struct TreeNode *root)
 }
 int sumOfLeftLeaves(struct TreeNode *root)
 {
-    if(root->left == NULL && root->right == NULL)
+    if (!root->left && !root->right)
         return 0;
     int sum = 0;
-    struct TreeNode * last = NULL;
+    struct TreeNode *last = root;
     traverse(&sum, last, root);
     return sum;
 }

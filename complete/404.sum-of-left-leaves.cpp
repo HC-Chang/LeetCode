@@ -9,14 +9,6 @@
  * Definition for a binary tree node.
  * struct TreeNode {
  *     int val;
- *     struct TreeNode *left;
- *     struct TreeNode *right;
- * };
- */
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
  *     TreeNode *left;
  *     TreeNode *right;
  *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
@@ -25,15 +17,13 @@
  * right(right) {}
  * };
  */
-class Solution
-{
+
+class Solution {
 public:
-    void traverse(int *sum, TreeNode *last, TreeNode *root)
-    {
+    void traverse(int* sum, TreeNode* last, TreeNode* root) {
         if (!root)
             return;
-        if ((last == NULL || last->left == root) && root->left == NULL &&
-            root->right == NULL)
+        if ( last->left == root && !root->left && !root->right)
             *sum += root->val;
         if (root->left)
             traverse(sum, root, root->left);
@@ -41,16 +31,16 @@ public:
             traverse(sum, root, root->right);
     }
 
-    int sumOfLeftLeaves(TreeNode *root)
-    {
-        if (root->left == NULL && root->right == NULL)
+    int sumOfLeftLeaves(TreeNode* root) {
+        if (!root->left && !root->right)
             return 0;
         int sum = 0;
-        TreeNode *last = NULL;
+        TreeNode* last = root;
         traverse(&sum, last, root);
         return sum;
     }
 };
+
 // @lc code=end
 
 // Note: tree
