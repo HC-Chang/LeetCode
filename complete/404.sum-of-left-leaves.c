@@ -34,3 +34,5 @@ int sumOfLeftLeaves(struct TreeNode *root)
     return sum;
 }
 // @lc code=end
+
+// Note: tree
