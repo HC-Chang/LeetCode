@@ -43,4 +43,4 @@ public:
 
 // @lc code=end
 
-// Note: tree
+// Note: binary tree
