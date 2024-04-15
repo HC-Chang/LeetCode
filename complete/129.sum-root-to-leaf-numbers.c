@@ -36,3 +36,5 @@ int sumNumbers(struct TreeNode *root)
     return sum;
 }
 // @lc code=end
+
+// Note: binary tree
