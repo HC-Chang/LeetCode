@@ -36,6 +36,8 @@ int islandPerimeter(int **grid, int gridSize, int *gridColSize)
 }
 // @lc code=end
 
+// Note: DFS
+
 // Solution 1:
 // int pass_boundary(int i, int j,int **grid, int gridSize, int *gridColSize)
 // {
