@@ -81,3 +81,5 @@ bool validPath(int n, int **edges, int edgesSize, int *edgesColSize, int source,
     return b;
 }
 // @lc code=end
+
+// Note: union-find
