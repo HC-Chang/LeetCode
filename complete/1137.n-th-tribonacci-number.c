@@ -18,3 +18,5 @@ int tribonacci(int n)
     return F[n];
 }
 // @lc code=end
+
+// Note: DP
