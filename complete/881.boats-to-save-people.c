@@ -27,3 +27,5 @@ int numRescueBoats(int *people, int peopleSize, int limit)
 }
 
 // @lc code=end
+
+// Note: sorting + two pointers
