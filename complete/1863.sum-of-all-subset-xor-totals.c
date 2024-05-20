@@ -25,6 +25,8 @@ int subsetXORSum(int *nums, int numsSize)
 }
 // @lc code=end
 
+// Note: bit manipulation
+
 // Solution 1:
 
 // int subsetXORSum(int *nums, int numsSize)
