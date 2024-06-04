@@ -1,5 +1,5 @@
 /*
- * @lc app=leetcode id=409 lang=c
+ * @lc app=leetcode id=409 lang=cpp
  *
  * [409] Longest Palindrome
  */
