@@ -23,5 +23,7 @@ int subarraysDivByK(int *nums, int numsSize, int k)
 }
 // @lc code=end
 
+// Note: hash table + prefix sum
+
 // 前缀和可能是負数
 // r = ((r + nums[i]) % k + k) % k;
