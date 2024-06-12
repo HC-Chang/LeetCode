@@ -5,13 +5,31 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b)
-{
-    return *(int *)a - *(int *)b;
-}
+// Solution 2: hash table
 
-void sortColors(int *nums, int numsSize)
-{
-    qsort(nums, numsSize, sizeof(int), sort);
+void sortColors(int* nums, int numsSize) {
+    int hash[3] = {0};
+    for(int i =0; i<numsSize; i++)
+        ++hash[nums[i]];
+    int idx = 0;
+    for(int i =0; i<3; i++)
+    {
+        for(int j =0; j<hash[i];j++)
+            nums[idx++] = i;
+    }
 }
 // @lc code=end
+
+// Note: sorting
+
+// Solution 1: qsort
+
+// int sort(void *a, void *b)
+// {
+//     return *(int *)a - *(int *)b;
+// }
+
+// void sortColors(int *nums, int numsSize)
+// {
+//     qsort(nums, numsSize, sizeof(int), sort);
+// }
