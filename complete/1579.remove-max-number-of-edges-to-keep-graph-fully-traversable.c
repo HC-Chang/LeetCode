@@ -33,7 +33,7 @@ int maxNumEdgesToRemove(int n, int **edges, int edgesSize, int *edgesColSize)
     int e[] = {0, 0, 0}, c[] = {n, n, n}, *p[3];
     for (int j = 0; j < 3; ++j)
     {
-        p[j] = malloc(n * sizeof(*p));
+        p[j] = (int *)malloc(n * sizeof(int));
         for (int i = 0; i < n; ++i)
             p[j][i] = -1;
     }
