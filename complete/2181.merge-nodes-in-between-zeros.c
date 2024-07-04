@@ -1,0 +1,37 @@
+/*
+ * @lc app=leetcode id=2181 lang=c
+ *
+ * [2181] Merge Nodes in Between Zeros
+ */
+
+// @lc code=start
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     struct ListNode *next;
+ * };
+ */
+struct ListNode *mergeNodes(struct ListNode *head)
+{
+    struct ListNode *cur = head;
+    struct ListNode *tmp = cur;
+    while (tmp->next)
+    {
+        if (tmp->val == 0)
+        {
+            cur = cur->next;
+            tmp = tmp->next;
+            cur->val = tmp->val;
+        }
+        else
+            cur->val += tmp->val;
+        tmp = tmp->next;
+    }
+    cur->next = NULL;
+
+    return head->next;
+}
+// @lc code=end
+
+// Note: linked list
