@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=6307 lang=c
+ * @lc app=leetcode id=2582 lang=c
  *
- * [6307] Pass the Pillow
+ * [2582] Pass the Pillow
  */
 
 // Difficulty:Easy
@@ -35,3 +35,5 @@ int passThePillow(int n, int time)
     return r;
 }
 // @lc code=end
+
+// Note: simulation
