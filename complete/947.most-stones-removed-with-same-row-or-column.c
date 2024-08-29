@@ -86,3 +86,5 @@ int removeStones(int **stones, int stonesSize, int *stonesColSize)
     return count;
 }
 // @lc code=end
+
+// Note: union find
