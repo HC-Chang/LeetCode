@@ -51,6 +51,6 @@ public:
 };
 // @lc code=end
 
-// Note:
+// Note: hash table + sliding window + sorting + heap
 
 // Official Solution
