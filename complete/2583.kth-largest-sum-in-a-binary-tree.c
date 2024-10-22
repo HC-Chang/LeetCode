@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=6308 lang=c
+ * @lc app=leetcode id=2583 lang=c
  *
- * [6308] Kth Largest Sum in a Binary Tree
+ * [2583] Kth Largest Sum in a Binary Tree
  */
 
 // Difficulty:Medium
@@ -61,11 +61,11 @@ long long kthLargestLevelSum(struct TreeNode *root, int k)
     long long *level_sum = calloc((h), sizeof(long long));
     traverse(root, 0, level_sum);
     qsort(level_sum, h, sizeof(long long), sort);
-    for (int i = 0; i < h; i++)
-        printf("%lld\n", level_sum[i]);
     long long max_sum = level_sum[k - 1];
     free(level_sum);
     return max_sum;
 }
 
 // @lc code=end
+
+// Note: BFS + sorting
