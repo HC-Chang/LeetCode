@@ -91,22 +91,27 @@ public:
 
 // Solution 1:
 
-// class Solution {
+// class Solution
+// {
 // public:
-//     struct TRIE {
-//         unordered_map<string, TRIE*> child;
+//     struct TRIE
+//     {
+//         unordered_map<string, TRIE *> child;
 //         bool is_leaf = false;
 //     };
 
-//     vector<string> split_slash(string& s) {
+//     vector<string> split_slash(string &s)
+//     {
 //         vector<string> ans;
 //         string tmp = "";
 
 //         int n = s.size();
-//         for (int i = 0; i <n; i++) {
+//         for (int i = 0; i < n; i++)
+//         {
 //             if (s[i] != '/')
 //                 tmp += s[i];
-//             else {
+//             else
+//             {
 //                 if (tmp != "")
 //                     ans.push_back(tmp);
 //                 tmp = "";
@@ -118,33 +123,38 @@ public:
 //         return ans;
 //     }
 
-//     void insert_trie(vector<string> s, TRIE* t) {
-//         TRIE* cur = t;
+//     void insert_trie(vector<string> s, TRIE *t)
+//     {
+//         TRIE *cur = t;
 //         int n = s.size();
 //         if (cur->is_leaf == true)
 //             return;
 
-//         for (int i = 0; i < n; i++) {
+//         for (int i = 0; i < n; i++)
+//         {
 //             if (cur->child.find(s[i]) == cur->child.end())
 //                 cur->child[s[i]] = new TRIE();
-
+//             else if (cur->child[s[i]]->is_leaf)
+//                 return;
 //             cur = cur->child[s[i]];
 //             if (i == n - 1)
 //                 cur->is_leaf = true;
 //         }
 //     }
 
-//     void dfs(string& s, TRIE* t, vector<string>& ans) {
+//     void dfs(string &s, TRIE *t, vector<string> &ans)
+//     {
 //         if (t == nullptr)
 //             return;
 
 //         if (t->is_leaf)
 //         {
 //             ans.push_back(s);
-//             return ;
+//             return;
 //         }
 
-//         for (auto c : t->child) {
+//         for (auto c : t->child)
+//         {
 //             s += "/" + c.first;
 //             dfs(s, c.second, ans);
 //             for (int i = 0; i <= c.first.size(); i++)
@@ -152,9 +162,12 @@ public:
 //         }
 //     }
 
-//     vector<string> removeSubfolders(vector<string>& folder) {
-//         TRIE* t = new TRIE();
+//     vector<string> removeSubfolders(vector<string> &folder)
+//     {
+//         TRIE *t = new TRIE();
 //         string s = "";
+
+//         sort(folder.begin(), folder.end());
 //         for (auto f : folder)
 //             insert_trie(split_slash(f), t);
 
