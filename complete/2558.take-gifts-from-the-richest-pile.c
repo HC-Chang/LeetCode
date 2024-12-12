@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=6348 lang=c
+ * @lc app=leetcode id=2558 lang=c
  *
- * [6348] Take Gifts From the Richest Pile
+ * [2558] Take Gifts From the Richest Pile
  */
 
 // Difficulty:Easy
