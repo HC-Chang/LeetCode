@@ -5,7 +5,6 @@
  */
 
 // @lc code=start
-int min(int a, int b) { return a < b ? a : b; }
 int mincostTickets(int *days, int daysSize, int *costs, int costsSize)
 {
     int total_day = days[daysSize - 1];
@@ -24,8 +23,8 @@ int mincostTickets(int *days, int daysSize, int *costs, int costsSize)
             index7 = (i - 7 > 0 ? i - 7 : 0);
             index30 = (i - 30 > 0 ? i - 30 : 0);
             cur = dp_total_day[i - 1] + costs[0];
-            cur = min(cur, dp_total_day[index7] + costs[1]);
-            cur = min(cur, dp_total_day[index30] + costs[2]);
+            cur = fmin(cur, dp_total_day[index7] + costs[1]);
+            cur = fmin(cur, dp_total_day[index30] + costs[2]);
             dp_total_day[i] = cur;
         }
         else
@@ -38,3 +37,5 @@ int mincostTickets(int *days, int daysSize, int *costs, int costsSize)
 }
 
 // @lc code=end
+
+// Note: DP
