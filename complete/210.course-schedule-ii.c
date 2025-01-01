@@ -91,4 +91,6 @@ int *findOrder(int numCourses, int **prerequisites, int prerequisitesSize, int *
 }
 // @lc code=end
 
-// Official Solution - Topological Sort
+// Note: Topological Sort
+
+// Official Solution
