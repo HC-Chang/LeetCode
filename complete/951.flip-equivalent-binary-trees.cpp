@@ -68,6 +68,6 @@ public:
 };
 // @lc code=end
 
-// Note: DFS + b-tree
+// Note: DFS + binary tree
 
 // Official Solution
