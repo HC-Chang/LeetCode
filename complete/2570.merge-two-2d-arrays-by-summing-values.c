@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=6362 lang=c
+ * @lc app=leetcode id=2570 lang=c
  *
- * [6362] Merge Two 2D Arrays by Summing Values
+ * [2570] Merge Two 2D Arrays by Summing Values
  */
 
 // Difficulty:Easy
@@ -46,7 +46,7 @@ int **mergeArrays(int **nums1, int nums1Size, int *nums1ColSize, int **nums2, in
 
     for (int i = 0; i < nums1Size; i++)
         push_arr(nums1[i], arr, returnSize);
-    for (int i = 0; i < nums2Size; i++)
+    for (int i = 0; i <     ; i++)
         push_arr(nums2[i], arr, returnSize);
 
     int **r = calloc(*returnSize, sizeof(int *));
@@ -70,3 +70,5 @@ int **mergeArrays(int **nums1, int nums1Size, int *nums1ColSize, int **nums2, in
     return r;
 }
 // @lc code=end
+
+// Note: hash table + two pointers
