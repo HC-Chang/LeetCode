@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(long long *)a - *(long long *)b; }
+int sort(const void *a, const void *b) { return *(long long *)a - *(long long *)b; }
 long long putMarbles(int *weights, int weightsSize, int k)
 {
     if (weightsSize == 1)
