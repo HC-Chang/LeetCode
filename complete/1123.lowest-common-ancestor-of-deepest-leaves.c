@@ -40,10 +40,7 @@ NODE dfs(struct TreeNode *root)
         return r;
     }
 
-    NODE obj;
-    obj.ptr = root;
-    obj.cnt = l.cnt + 1;
-    return obj;
+    return (NODE){root, l.cnt + 1};
 }
 
 struct TreeNode *lcaDeepestLeaves(struct TreeNode *root)
