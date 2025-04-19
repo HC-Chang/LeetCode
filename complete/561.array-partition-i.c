@@ -7,7 +7,7 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int arrayPairSum(int *nums, int numsSize)
 {
     qsort(nums, numsSize, sizeof(int), sort);

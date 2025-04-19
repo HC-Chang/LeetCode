@@ -14,7 +14,7 @@ typedef struct
     int idx;
 } DATA;
 
-int sort(void *a, void *b) { return ((DATA *)a)->val - ((DATA *)b)->val; }
+int sort(const void *a, const void *b) { return ((DATA *)a)->val - ((DATA *)b)->val; }
 
 int *arrayRankTransform(int *arr, int arrSize, int *returnSize)
 {

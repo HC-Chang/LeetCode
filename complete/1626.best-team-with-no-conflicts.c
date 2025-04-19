@@ -13,7 +13,7 @@ typedef struct
     int score;
 } DATA;
 
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     DATA *aa = (DATA *)a;
     DATA *bb = (DATA *)b;

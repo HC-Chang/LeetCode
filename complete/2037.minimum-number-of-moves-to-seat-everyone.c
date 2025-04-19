@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int minMovesToSeat(int *seats, int seatsSize, int *students, int studentsSize)
 {
     qsort(seats, seatsSize, sizeof(int), sort);

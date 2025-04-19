@@ -19,18 +19,18 @@
 // 1 <= k <= 103
 
 // @lc code=start
+int sort(const void *a, const void *b) { return *(int *)b - *(int *)a; }
 
-int sort(void *a, void* b){return *(int*)b - *(int*)a;}
-
-long long pickGifts(int* gifts, int giftsSize, int k){
-    for(int i =0; i<k; i++)
+long long pickGifts(int *gifts, int giftsSize, int k)
+{
+    for (int i = 0; i < k; i++)
     {
         qsort(gifts, giftsSize, sizeof(int), sort);
         gifts[0] = sqrt(gifts[0]);
     }
-    
+
     long long r = 0;
-    for(int i =0; i< giftsSize; i++)
+    for (int i = 0; i < giftsSize; i++)
         r += gifts[i];
     return r;
 }

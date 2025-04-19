@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(double *)a > *(double *)b; }
+int sort(const void *a, const void *b) { return *(double *)a > *(double *)b; }
 int eliminateMaximum(int *dist, int distSize, int *speed, int speedSize)
 {
     double time[distSize];

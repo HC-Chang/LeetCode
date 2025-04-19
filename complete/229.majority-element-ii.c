@@ -56,7 +56,7 @@ int* majorityElement(int* nums, int numsSize, int* returnSize){
 // @lc code=end
 
 // Solution 1:
-// int sort(void *a, void *b){return *(int*)a - *(int*)b;}
+// int sort(const void *a, const void *b){return *(int*)a - *(int*)b;}
 // int* majorityElement(int* nums, int numsSize, int* returnSize){
 //     *returnSize = 0;
 //     qsort(nums, numsSize, sizeof(int), sort);

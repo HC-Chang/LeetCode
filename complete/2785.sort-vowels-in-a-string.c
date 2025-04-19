@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(char *)a - *(char *)b; }
+int sort(const void *a, const void *b) { return *(char *)a - *(char *)b; }
 char *sortVowels(char *s)
 {
     int n = strlen(s);

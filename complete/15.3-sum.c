@@ -10,7 +10,7 @@
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 void push(int i, int j, int k, int *nums, int *returnSize, int ***r)
 {
     r[0][*returnSize] = malloc(3 * sizeof(int));

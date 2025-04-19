@@ -9,7 +9,7 @@ const int INF = 0x3f3f3f3f;
 
 int min(int a, int b) { return a < b ? a : b; }
 
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     return *(int *)a - *(int *)b;
 }

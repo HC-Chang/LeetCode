@@ -32,7 +32,7 @@ int peakIndexInMountainArray(int *arr, int arrSize)
 //     int val;
 // } DATA;
 
-// int sort(void *a, void *b) { return ((DATA *)b)->val - ((DATA *)a)->val; }
+// int sort(const void *a, const void *b) { return ((DATA *)b)->val - ((DATA *)a)->val; }
 
 // int peakIndexInMountainArray(int *arr, int arrSize)
 // {

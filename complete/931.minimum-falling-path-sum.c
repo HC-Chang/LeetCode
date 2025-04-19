@@ -15,7 +15,7 @@ int last_min(int i, int j, int** matrix, int matrixSize, int* matrixColSize)
     return min;
 }
 
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     return *(int*)a - *(int*)b;
 }

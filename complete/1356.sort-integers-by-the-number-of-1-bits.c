@@ -21,7 +21,7 @@ int count_bits(int n)
 
     return count;
 }
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     int n1 = count_bits(*(int *)a);
     int n2 = count_bits(*(int *)b);
@@ -55,7 +55,7 @@ int *sortByBits(int *arr, int arrSize, int *returnSize)
 //     return count;
 // }
 
-// int sort(void *a, void *b)
+// int sort(const void *a, const void *b)
 // {
 //     if (((DATA *)a)->bit_count == ((DATA *)b)->bit_count)
 //         return ((DATA *)a)->val - ((DATA *)b)->val;

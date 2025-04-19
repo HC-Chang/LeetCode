@@ -17,7 +17,7 @@
 // -106 <= nums[i] <= 106
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)b - *(int *)a; }
+int sort(const void *a, const void *b) { return *(int *)b - *(int *)a; }
 
 int maxScore(int *nums, int numsSize)
 {

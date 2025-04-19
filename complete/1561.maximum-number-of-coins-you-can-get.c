@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)b - *(int *)a; }
+int sort(const void *a, const void *b) { return *(int *)b - *(int *)a; }
 int maxCoins(int *piles, int pilesSize)
 {
     qsort(piles, pilesSize, sizeof(int), sort);

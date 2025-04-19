@@ -27,7 +27,7 @@ int binary_search(JOB *j, int right, int target)
     return left;
 }
 
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     JOB *x = (JOB *)a;
     JOB *y = (JOB *)b;

@@ -35,7 +35,7 @@ void inorder_traverse(struct TreeNode *root, DATA *d)
     if (root->right)
         inorder_traverse(root->right, d);
 }
-int sort(void *a, void *b) { return ((DATA *)b)->count - ((DATA *)a)->count; }
+int sort(const void *a, const void *b) { return ((DATA *)b)->count - ((DATA *)a)->count; }
 int *findMode(struct TreeNode *root, int *returnSize)
 {
     DATA d[200001];

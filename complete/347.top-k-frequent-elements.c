@@ -13,7 +13,7 @@ typedef struct
     int index;
     int count;
 } DATA;
-int sort(void *a, void *b) { return (*(DATA *)b).count - (*(DATA *)a).count; }
+int sort(const void *a, const void *b) { return (*(DATA *)b).count - (*(DATA *)a).count; }
 int *topKFrequent(int *nums, int numsSize, int k, int *returnSize)
 {
     *returnSize = k;

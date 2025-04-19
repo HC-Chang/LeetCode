@@ -14,7 +14,7 @@ typedef struct
     char *label;
 } DATA;
 
-int sort(void *a, void *b) { return ((DATA *)a)->score < ((DATA *)b)->score; }
+int sort(const void *a, const void *b) { return ((DATA *)a)->score < ((DATA *)b)->score; }
 
 char **findRelativeRanks(int *score, int scoreSize, int *returnSize)
 {

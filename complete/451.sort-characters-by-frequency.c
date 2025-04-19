@@ -11,7 +11,7 @@ typedef struct
     int cnt;
 } DATA;
 
-int sort(void *a, void *b) { return (*(DATA *)b).cnt - (*(DATA *)a).cnt; };
+int sort(const void *a, const void *b) { return (*(DATA *)b).cnt - (*(DATA *)a).cnt; };
 // '0' ~ 'z'
 // 48 ~ 122
 #define SIZE 75

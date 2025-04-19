@@ -20,7 +20,7 @@ int dfs(int *numbers, int numsSize, int now)
     return buffer + dfs(numbers, numsSize, now + 1);
 }
 
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int beautifulSubsets(int *nums, int numsSize, int k)
 {
 

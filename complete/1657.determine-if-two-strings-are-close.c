@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)b - *(int *)a; }
+int sort(const void *a, const void *b) { return *(int *)b - *(int *)a; }
 bool closeStrings(char *word1, char *word2)
 {
     int len1 = strlen(word1);

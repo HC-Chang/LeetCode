@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int largestSubmatrix(int **matrix, int matrixSize, int *matrixColSize)
 {
     int m = matrixSize;

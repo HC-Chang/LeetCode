@@ -14,7 +14,7 @@ typedef struct
     int h;
 } DATA;
 
-int sort(void *a, void *b) { return ((DATA *)b)->h - ((DATA *)a)->h; }
+int sort(const void *a, const void *b) { return ((DATA *)b)->h - ((DATA *)a)->h; }
 
 char **sortPeople(char **names, int namesSize, int *heights, int heightsSize,
                   int *returnSize)

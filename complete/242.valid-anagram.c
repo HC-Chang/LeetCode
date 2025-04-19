@@ -28,7 +28,7 @@ bool isAnagram(char *s, char *t)
 // @lc code=end
 
 // Solution 1: Sort String and Compare
-// int sort(void *a, void *b) { return *(char *)a - *(char *)b; }
+// int sort(const void *a, const void *b) { return *(char *)a - *(char *)b; }
 
 // bool isAnagram(char *s, char *t)
 // {

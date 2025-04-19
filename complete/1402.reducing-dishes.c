@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)b - *(int *)a; }
+int sort(const void *a, const void *b) { return *(int *)b - *(int *)a; }
 int max(int a, int b) { return a > b ? a : b; }
 int maxSatisfaction(int *satisfaction, int satisfactionSize)
 {

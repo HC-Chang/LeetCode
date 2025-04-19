@@ -10,7 +10,7 @@
  * Note: The returned array must be malloced, assume caller calls free().
  */
 // Solution 3:
-int sort(void *a, void *b) { return *(int *)a % 2 == 1; }
+int sort(const void *a, const void *b) { return *(int *)a % 2 == 1; }
 int *sortArrayByParity(int *nums, int numsSize, int *returnSize)
 {
     *returnSize = numsSize;

@@ -13,7 +13,7 @@
  *     struct TreeNode *right;
  * };
  */
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 
 void push_arr(int val, int *index, int *arr)
 {

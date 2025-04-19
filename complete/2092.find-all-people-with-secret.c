@@ -8,7 +8,7 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     int **x = (int **)a;
     int **y = (int **)b;

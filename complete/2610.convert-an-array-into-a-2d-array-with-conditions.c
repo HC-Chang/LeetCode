@@ -11,35 +11,36 @@
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
 // Solution 2:
-int sort(void *a ,void *b){return *(int*)a - *(int *)b;}
-int** findMatrix(int* nums, int numsSize, int* returnSize, int** returnColumnSizes){
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
+int **findMatrix(int *nums, int numsSize, int *returnSize, int **returnColumnSizes)
+{
     qsort(nums, numsSize, sizeof(int), sort);
-    int **ans = malloc(numsSize*sizeof(int*));
-    for(int i =0;i<numsSize; i++)
-        ans[i] = calloc(numsSize,sizeof(int));
-    
+    int **ans = malloc(numsSize * sizeof(int *));
+    for (int i = 0; i < numsSize; i++)
+        ans[i] = calloc(numsSize, sizeof(int));
+
     int cnt = 1;
     *returnSize = 0;
-    returnColumnSizes[0] = calloc(numsSize, sizeof(int)) ;
-    for(int i = 1 ; i<numsSize; i++)
+    returnColumnSizes[0] = calloc(numsSize, sizeof(int));
+    for (int i = 1; i < numsSize; i++)
     {
-        if(nums[i] == nums[i-1])
+        if (nums[i] == nums[i - 1])
         {
             cnt++;
-            if(cnt > *returnSize)
+            if (cnt > *returnSize)
                 *returnSize = cnt;
         }
         else
         {
-            for(int j = 0; j<cnt; j++)
-                ans[j][returnColumnSizes[0][j]++] = nums[i-1];
+            for (int j = 0; j < cnt; j++)
+                ans[j][returnColumnSizes[0][j]++] = nums[i - 1];
             cnt = 1;
         }
     }
-    if(cnt > *returnSize)
+    if (cnt > *returnSize)
         *returnSize = cnt;
-    for(int j = 0; j<cnt; j++)
-        ans[j][returnColumnSizes[0][j]++] = nums[numsSize-1];
+    for (int j = 0; j < cnt; j++)
+        ans[j][returnColumnSizes[0][j]++] = nums[numsSize - 1];
 
     return ans;
 }

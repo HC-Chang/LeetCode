@@ -9,7 +9,7 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int binary_search(int spell, long long success, int *arr, int arr_size)
 {
     int left = 0;

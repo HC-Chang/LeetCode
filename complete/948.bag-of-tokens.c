@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int bagOfTokensScore(int *tokens, int tokensSize, int power)
 {
     if (tokensSize == 0)

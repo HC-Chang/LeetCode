@@ -38,7 +38,7 @@ int *sortedSquares(int *nums, int numsSize, int *returnSize)
 // Note: sorting + two pointer
 
 // Sloution 1: qsort
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int *sortedSquares(int *nums, int numsSize, int *returnSize)
 {
     *returnSize = numsSize;

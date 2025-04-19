@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int maximumElementAfterDecrementingAndRearranging(int *arr, int arrSize)
 {
     qsort(arr, arrSize, sizeof(int), sort);

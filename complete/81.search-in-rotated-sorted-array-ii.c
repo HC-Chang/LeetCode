@@ -44,7 +44,7 @@ bool search(int *nums, int numsSize, int target)
 // Note: binary search
 
 // Solution 1:
-// int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+// int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 // bool search(int *nums, int numsSize, int target)
 // {
 //     qsort(nums, numsSize, sizeof(int), sort);

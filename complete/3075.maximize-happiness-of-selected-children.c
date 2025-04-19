@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)b - *(int *)a; }
+int sort(const void *a, const void *b) { return *(int *)b - *(int *)a; }
 long long maximumHappinessSum(int *happiness, int happinessSize, int k)
 {
     qsort(happiness, happinessSize, sizeof(int), sort);

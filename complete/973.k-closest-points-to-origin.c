@@ -10,7 +10,7 @@
  * The sizes of the arrays are returned as *returnColumnSizes array.
  * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().
  */
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     int dist1 = (*(int **)a)[0] * (*(int **)a)[0] + (*(int **)a)[1] * (*(int **)a)[1];
     int dist2 = (*(int **)b)[0] * (*(int **)b)[0] + (*(int **)b)[1] * (*(int **)b)[1];

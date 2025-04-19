@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     int **x = (int **)a;
     int **y = (int **)b;

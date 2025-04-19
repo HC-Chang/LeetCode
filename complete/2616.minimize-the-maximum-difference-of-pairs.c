@@ -20,7 +20,7 @@ int countValidPairs(int *nums, int numsSize, int threshold)
     return count;
 }
 
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 
 int minimizeMax(int *nums, int numsSize, int p)
 {

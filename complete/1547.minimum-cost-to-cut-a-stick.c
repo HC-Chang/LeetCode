@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int min(int a, int b) { return a < b ? a : b; }
 int minCost(int n, int *cuts, int cutsSize)
 {

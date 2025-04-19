@@ -56,7 +56,7 @@ int maxWidthRamp(int *nums, int numsSize)
 //     int val;
 // } DATA;
 
-// int sort(void *a, void *b)
+// int sort(const void *a, const void *b)
 // {
 //     DATA *x = (DATA *)a;
 //     DATA *y = (DATA *)b;

@@ -13,7 +13,7 @@ typedef struct
     int v1;
     int v2;
 } DATA;
-int sort(void *a, void *b) { return ((DATA *)a)->v1 * ((DATA *)b)->v2 - ((DATA *)b)->v1 * ((DATA *)a)->v2; }
+int sort(const void *a, const void *b) { return ((DATA *)a)->v1 * ((DATA *)b)->v2 - ((DATA *)b)->v1 * ((DATA *)a)->v2; }
 int *kthSmallestPrimeFraction(int *arr, int arrSize, int k, int *returnSize)
 {
     DATA *d = calloc(arrSize * (arrSize - 1) / 2, sizeof(DATA));

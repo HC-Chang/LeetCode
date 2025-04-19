@@ -11,7 +11,7 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 bool *checkArithmeticSubarrays(int *nums, int numsSize, int *l, int lSize, int *r, int rSize, int *returnSize)
 {
     int copy[numsSize];

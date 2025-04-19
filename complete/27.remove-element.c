@@ -31,7 +31,7 @@ int removeElement(int *nums, int numsSize, int val)
 // @lc code=end
 
 // Solution 1: sort
-// int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+// int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 // int removeElement(int *nums, int numsSize, int val)
 // {
 //     int r = numsSize;

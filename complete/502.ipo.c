@@ -12,7 +12,7 @@ typedef struct
     int profit;
 } PROJECT;
 
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     if (((PROJECT *)a)->capital != ((PROJECT *)b))
         return ((PROJECT *)a)->capital - ((PROJECT *)b)->capital;

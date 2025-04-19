@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int numRescueBoats(int *people, int peopleSize, int limit)
 {
     qsort(people, peopleSize, sizeof(int), sort);

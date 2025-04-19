@@ -17,7 +17,7 @@ typedef struct
     int count;
 } DATA;
 
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     if ((*(DATA *)a).count == (*(DATA *)b).count)
         return (*(DATA *)a).idx - (*(DATA *)b).idx;

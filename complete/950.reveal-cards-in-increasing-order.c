@@ -41,7 +41,7 @@ void free_queue(QUEUE *obj)
     free(obj);
 }
 
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int *deckRevealedIncreasing(int *deck, int deckSize, int *returnSize)
 {
     QUEUE *q = init_queue(2 * deckSize);

@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int combinationSum4(int *nums, int numsSize, int target)
 {
     qsort(nums, numsSize, sizeof(int), sort);

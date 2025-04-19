@@ -24,7 +24,7 @@ typedef struct
     int val;
 } DATA;
 
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     DATA *a1 = (DATA *)a;
     DATA *b1 = (DATA *)b;

@@ -11,7 +11,7 @@ typedef struct
     int val;
 } DATA;
 
-int sort(void *a, void *b)
+int sort(const void *a, const void *b)
 {
     return ((DATA *)a)->val - ((DATA *)b)->val;
 }

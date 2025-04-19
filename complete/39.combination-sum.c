@@ -32,7 +32,7 @@ void combine(int *arr, int arr_size, int *tmp, int tmp_size, int cur_index, int 
     }
 }
 
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 int **combinationSum(int *candidates, int candidatesSize, int target, int *returnSize, int **returnColumnSizes)
 {
     qsort(candidates, candidatesSize, sizeof(int), sort);

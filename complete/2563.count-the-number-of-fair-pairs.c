@@ -23,7 +23,7 @@ long long lower_bound(int val, int *nums, int numsSize)
     return result;
 }
 
-int sort(void *a, void *b) { return *(int *)a - *(int *)b; }
+int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
 
 long long countFairPairs(int *nums, int numsSize, int lower, int upper)
 {
