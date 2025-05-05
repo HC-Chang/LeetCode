@@ -23,5 +23,7 @@ int numTilings(int n)
 }
 // @lc code=end
 
+// Note: DP
+
 // 509.Fibonacci-Number
 // dp[i] = dp[i-1] + dp[i-2]
