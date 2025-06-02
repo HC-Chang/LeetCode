@@ -56,3 +56,5 @@ int candy(int *ratings, int ratingsSize)
     return s;
 }
 // @lc code=end
+
+// Note: greedy
