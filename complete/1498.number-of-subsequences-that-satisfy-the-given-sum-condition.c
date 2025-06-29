@@ -27,3 +27,5 @@ int numSubseq(int *nums, int numsSize, int target)
     return count;
 }
 // @lc code=end
+
+// Note: two pointers + binary search + sorting
