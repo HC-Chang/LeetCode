@@ -12,7 +12,7 @@ public:
     {
         int max_sum = 0;
         int sum = 0;
-        vector<int> hash(10001, 0);
+        unordered_map<int, int> hash;
         int l = 0;
         int r = 0;
         int n = nums.size();
