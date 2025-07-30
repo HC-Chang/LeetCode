@@ -11,26 +11,27 @@ public:
     int longestSubarray(vector<int> &nums)
     {
         int max_val = 0;
-        int ans = 0;
-        int cur = 0;
+        int max_cnt = 0;
+        int cnt = 0;
 
         for (auto n : nums)
         {
             if (max_val < n)
             {
                 max_val = n;
-                cur = 0;
-                ans = cur;
+                cnt = 0;
+                max_cnt = cnt;
             }
 
             if (max_val == n)
-                cur++;
+            {
+                cnt++;
+                max_cnt = max(max_cnt, cnt);
+            }
             else
-                cur = 0;
-
-            ans = max(ans, cur);
+                cnt = 0;
         }
-        return ans;
+        return max_cnt;
     }
 };
 // @lc code=end
