@@ -29,6 +29,9 @@ bool isPowerOfThree(int n)
     return false;
 }
 // @lc code=end
+
+// Note: math + recursion
+
 // 3 的次方一定為奇數 
 // -> n % 2 != 0
 //
