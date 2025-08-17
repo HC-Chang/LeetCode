@@ -31,3 +31,5 @@ double new21Game(int n, int k, int maxPts)
     return probablity;
 }
 // @lc code=end
+
+// Note: DP
