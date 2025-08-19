@@ -25,3 +25,5 @@ long long zeroFilledSubarray(int *nums, int numsSize)
     return total_count;
 }
 // @lc code=end
+
+// Note: math
