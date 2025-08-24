@@ -19,3 +19,5 @@ int longestSubarray(int *nums, int numsSize)
     return r - l - 1;
 }
 // @lc code=end
+
+// Note: sliding window
