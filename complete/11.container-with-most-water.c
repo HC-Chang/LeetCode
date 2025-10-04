@@ -23,3 +23,5 @@ int maxArea(int *height, int heightSize)
     return max_area;
 }
 // @lc code=end
+
+// Note: two pointers + greedy
