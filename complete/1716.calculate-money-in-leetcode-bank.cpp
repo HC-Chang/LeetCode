@@ -10,16 +10,9 @@ class Solution
 public:
     int totalMoney(int n)
     {
-        int sum = 1;
-        int idx = 2;
-        for (int i = 1; i < n; i++)
-        {
-            if (i % 7 == 0)
-                idx -= 6;
-            sum += idx++;
-        }
-
-        return sum;
+        int q = n / 7;
+        int r = n % 7;
+        return 28 * a + a * (a - 1) * 3.5 + a * b + (1 + b) * b / 2;
     }
 };
 // @lc code=end
