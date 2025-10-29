@@ -12,9 +12,8 @@ public:
     {
         int val = 0;
         while (val < n)
-        {
             val = (val << 1) + 1;
-        }
+
         return val;
     }
 };
