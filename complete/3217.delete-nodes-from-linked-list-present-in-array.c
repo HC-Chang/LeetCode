@@ -18,20 +18,27 @@ struct ListNode *modifiedList(int *nums, int numsSize, struct ListNode *head)
     for (int i = 0; i < numsSize; i++)
         ++hash[nums[i]];
 
-    struct ListNode *ans = malloc(sizeof(struct ListNode));
-    struct ListNode *cur = ans;
-    while (head)
+    struct ListNode *cur = head;
+    struct ListNode *tmp = NULL;
+    while (cur != NULL)
     {
-        if (!hash[head->val])
+        if (!hash[cur->val])
         {
-            cur->next = head;
-            cur = cur->next;
+            if (tmp == NULL)
+            {
+                head = cur;
+                tmp = head;
+            }
+            else
+            {
+                tmp->next = cur;
+                tmp = tmp->next;
+            }
         }
-        head = head->next;
+        cur = cur->next;
     }
-    cur->next = NULL;
-
-    return ans->next;
+    tmp->next = NULL;
+    return head;
 }
 // @lc code=end
 

@@ -21,23 +21,29 @@ public:
     ListNode *modifiedList(vector<int> &nums, ListNode *head)
     {
         unordered_map<int, int> hash;
-        for (auto n : nums)
+        for (const auto &n : nums)
             ++hash[n];
-
-        ListNode *ans = new ListNode();
-        ListNode *cur = ans;
-        while (head != nullptr)
+        ListNode *cur = head;
+        ListNode *tmp = nullptr;
+        while (cur != nullptr)
         {
-            if (!hash[head->val])
+            if (hash.find(cur->val) == hash.end())
             {
-                cur->next = head;
-                cur = cur->next;
+                if (tmp == nullptr)
+                {
+                    head = cur;
+                    tmp = head;
+                }
+                else
+                {
+                    tmp->next = cur;
+                    tmp = tmp->next;
+                }
             }
-            head = head->next;
+            cur = cur->next;
         }
-        cur->next = nullptr;
-
-        return ans->next;
+        tmp->next = nullptr;
+        return head;
     }
 };
 // @lc code=end
