@@ -10,29 +10,27 @@ class Solution
 public:
     int minCost(string colors, vector<int> &neededTime)
     {
-        int sum = neededTime[0];
-        int tmp_max = neededTime[0];
-        int min_cost = 0;
-        int n = neededTime.size();
-        for (int i = 1; i < n; i++)
+        int n = colors.size();
+        int min_val = 0;
+        int tmp_val;
+        for (int i = 0; i < n; i++)
         {
-            if (colors[i] == colors[i - 1])
+            tmp_val = neededTime[i];
+            while (i + 1 < n && colors[i] == colors[i + 1])
             {
-                sum += neededTime[i];
-                if (neededTime[i] > tmp_max)
-                    tmp_max = neededTime[i];
-            }
-            else
-            {
-                min_cost += sum - tmp_max;
-                sum = neededTime[i];
-                tmp_max = neededTime[i];
+                if (neededTime[i + 1] > tmp_val)
+                {
+                    min_val += tmp_val;
+                    tmp_val = neededTime[i + 1];
+                }
+                else
+                    min_val += neededTime[i + 1];
+
+                i++;
             }
         }
-        if (colors[n - 1] == colors[n - 2])
-            min_cost += sum - tmp_max;
 
-        return min_cost;
+        return min_val;
     }
 };
 // @lc code=end
