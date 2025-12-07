@@ -14,3 +14,5 @@ int countOdds(int low, int high)
     return low > high ? 0 : (high - low) / 2 + 1;
 }
 // @lc code=end
+
+// Note: math
