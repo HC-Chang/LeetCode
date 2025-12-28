@@ -30,6 +30,8 @@ int countNegatives(int **grid, int gridSize, int *gridColSize)
 }
 // @lc code=end
 
+// Note: binary search
+
 // Solution 1:
 // int countNegatives(int **grid, int gridSize, int *gridColSize)
 // {
