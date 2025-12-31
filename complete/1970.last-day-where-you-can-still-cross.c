@@ -143,3 +143,5 @@ int latestDayToCross(int row, int col, int **cells, int cellsSize, int *cellsCol
     return 0;
 }
 // @lc code=end
+
+// Note: union find
