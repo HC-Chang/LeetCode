@@ -54,3 +54,5 @@ int maxLevelSum(struct TreeNode *root)
     return max_index + 1;
 }
 // @lc code=end
+
+// Note: tree + dfs
