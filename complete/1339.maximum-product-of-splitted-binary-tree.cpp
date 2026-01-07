@@ -18,26 +18,27 @@
  */
 class Solution
 {
-    long total = 0, mod = 1e9 + 7, ans = 0;
-    long postorder(TreeNode *root)
+    long mod = 1e9 + 7;
+    long postorder(vector<int> &sums, TreeNode *root)
     {
         if (!root)
             return 0;
-        long sum = root->val + postorder(root->left) + postorder(root->right);
-        if (total)
-            ans = max(ans, sum * (total - sum));
+        long sum = root->val + postorder(sums, root->left) + postorder(sums, root->right);
+        sums.push_back(sum);
         return sum;
     }
 
 public:
     int maxProduct(TreeNode *root)
     {
-        total = postorder(root);
-        postorder(root);
+        vector<int> sums;
+        long total = postorder(sums, root);
+        long ans = 0;
+        for (const auto &s : sums)
+            ans = max(ans, s * (total - s));
         return ans % mod;
     }
 };
-
 // @lc code=end
 
 // Note: binary tree
