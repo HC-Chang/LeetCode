@@ -39,3 +39,5 @@ public:
 };
 
 // @lc code=end
+
+// Note: binary tree
