@@ -29,3 +29,5 @@ int longestZigZag(struct TreeNode *root)
     return max_count;
 }
 // @lc code=end
+
+// NOTE: DFS
