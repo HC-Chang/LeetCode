@@ -5,42 +5,17 @@
  */
 
 // @lc code=start
-class Solution
-{
+class Solution {
 public:
-    typedef struct
-    {
-        int val;
-        int bit_count;
-    } DATA;
+    vector<int> sortByBits(vector<int>& arr) {
+        sort(arr.begin(), arr.end(), [](int a, int b) {
+            int aa = __builtin_popcount(a);
+            int bb = __builtin_popcount(b);
+            if (aa == bb)
+                return a < b;
+            return aa < bb;
+        });
 
-    int count_bits(int n)
-    {
-        int count = 0;
-        while (n > 0)
-        {
-            count += n & 1;
-            n >>= 1;
-        }
-
-        return count;
-    }
-
-    vector<int> sortByBits(vector<int> &arr)
-    {
-        int n = arr.size();
-        vector<DATA> d(n);
-        for (int i = 0; i < n; i++)
-        {
-            d[i].val = arr[i];
-            d[i].bit_count = count_bits(arr[i]);
-        }
-        std::sort(d.begin(), d.end(), [](DATA a, DATA b){
-            if (a.bit_count == b.bit_count)
-                return a.val < b.val;
-            return a.bit_count < b.bit_count; });
-        for (int i = 0; i < n; i++)
-            arr[i] = d[i].val;
         return arr;
     }
 };
