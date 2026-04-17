@@ -23,16 +23,11 @@ public:
             int rev = stoi(rev_str);
             if (hash.find(rev) != hash.end())
             {
-                for (auto &h : hash[rev])
-                {
-                    if (h > i)
-                    {
-                        dis = min(dis, h - i);
-                        if (dis == 1)
-                            return 1;
-                        break;
-                    }
-                }
+                auto it = upper_bound(hash[rev].begin(), hash[rev].end(), i);
+                if (it != hash[rev].end())
+                    dis = min(dis, *it - i);
+                if (dis == 1)
+                    return dis;
             }
         }
         if (dis == INT_MAX)
