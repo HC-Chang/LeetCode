@@ -94,3 +94,5 @@ int orangesRotting(int **grid, int gridSize, int *gridColSize)
     return 0 > count - 1 ? 0 : count - 1;
 }
 // @lc code=end
+
+// Note: BFS + queue
