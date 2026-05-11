@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=6303 lang=c
+ * @lc app=leetcode id=2553 lang=c
  *
- * [6303] Separate the Digits in an Array
+ * [2553] Separate the Digits in an Array
  */
 
 // Difficulty:Easy
