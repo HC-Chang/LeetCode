@@ -21,13 +21,12 @@ public:
             {
                 if (flag || (i + 1 < n && nums[i - 1] < nums[i + 1]))
                     return false;
+                else if (nums[0] < nums[n - 1])
+                    return false;
                 else
                     flag = true;
             }
         }
-
-        if (flag && nums[0] < nums[n - 1])
-            return false;
 
         return true;
     }
