@@ -1,32 +1,30 @@
 /*
- * @lc app=leetcode id=2126 lang=cpp
+ * @lc app=leetcode id=2126 lang=c
  *
  * [2126] Destroying Asteroids
  */
 
 // @lc code=start
-class Solution
+int sort(const void *a, const void *b)
 {
-public:
-    bool asteroidsDestroyed(int mass, vector<int> &asteroids)
+    return *(int *)a - *(int *)b;
+}
+
+bool asteroidsDestroyed(int mass, int *asteroids, int asteroidsSize)
+{
+    qsort(asteroids, asteroidsSize, sizeof(int), sort);
+
+    long long cur = mass;
+    for (int i = 0; i < asteroidsSize; i++)
     {
-        int n = asteroids.size();
-        sort(asteroids.begin(), asteroids.end());
-        if (mass < asteroids[0])
+        if (cur >= asteroids[i])
+            cur += asteroids[i];
+        else
             return false;
-
-        long long p = asteroids[0] + mass;
-        for (int i = 1; i < n; i++)
-        {
-            if (p >= asteroids[i])
-                p += asteroids[i];
-            else
-                return false;
-        }
-
-        return true;
     }
-};
+
+    return true;
+}
 // @lc code=end
 
 // Note: sort
