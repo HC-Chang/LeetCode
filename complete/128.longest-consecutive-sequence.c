@@ -5,8 +5,7 @@
  */
 
 // @lc code=start
-
-int sort(int *a, int *b) { return *a > *b; }
+int sort(const void *a, const void *b) { return *(int *)a > *(int *)b; }
 
 int longestConsecutive(int *nums, int numsSize)
 {
@@ -30,10 +29,7 @@ int longestConsecutive(int *nums, int numsSize)
             count = 1;
         }
     }
-    if (count > max_count)
-        max_count = count;
-
-    return max_count;
+    return fmax(max_count, count);
 }
 // @lc code=end
 
