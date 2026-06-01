@@ -6,20 +6,19 @@
 
 // @lc code=start
 int sort(const void *a, const void *b) { return *(int *)b - *(int *)a; }
+
 int minimumCost(int *cost, int costSize)
 {
     qsort(cost, costSize, sizeof(int), sort);
-    int sum = 0;
     int i = 0;
-    while (i < costSize)
+    for (int i = 1; i < costSize; i++)
     {
-        if (i == costSize - 1)
-            sum += cost[i];
-        else
-            sum += cost[i] + cost[i + 1];
-        i += 3;
+        if (i % 3 == 2)
+            continue;
+        cost[0] += cost[i];
     }
-    return sum;
+    return cost[0];
 }
-
 // @lc code=end
+
+// Note: sort
