@@ -24,3 +24,5 @@ int maxIceCream(int *costs, int costsSize, int coins)
     return i;
 }
 // @lc code=end
+
+// Note: sort
