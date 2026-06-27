@@ -45,3 +45,5 @@ bool isValid(char *s)
     return index == 0;
 }
 // @lc code=end
+
+// Note: stack
