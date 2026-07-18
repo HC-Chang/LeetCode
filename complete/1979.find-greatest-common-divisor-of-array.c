@@ -5,21 +5,28 @@
  */
 
 // @lc code=start
-int sort(const void *a, const void *b) { return *(int *)a - *(int *)b; }
-
 int gcd(int a, int b)
 {
-    if (a % b)
-        return gcd(b, a % b);
-    else
+    if (a % b == 0)
         return b;
+    else
+        return gcd(b, a % b);
 }
 
 int findGCD(int *nums, int numsSize)
 {
-    qsort(nums, numsSize, sizeof(int), sort);
-    return gcd(nums[0], nums[numsSize - 1]);
+    int min_val = nums[0];
+    int max_val = nums[0];
+    for (int i = 1; i < numsSize; i++)
+    {
+        if (nums[i] < min_val)
+            min_val = nums[i];
+        else if (nums[i] > max_val)
+            max_val = nums[i];
+    }
+
+    return gcd(min_val, max_val);
 }
 // @lc code=end
 
-// Note: GCD
+// Note: math(GCD)
