@@ -27,3 +27,5 @@ bool PredictTheWinner(int *nums, int numsSize)
     return b;
 }
 // @lc code=end
+
+// Note: dp
